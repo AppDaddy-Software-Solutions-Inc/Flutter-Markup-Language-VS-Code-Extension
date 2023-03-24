@@ -33,9 +33,6 @@
 			]
 		},
 		{
-			"include": "#entity"
-		},
-		{
 			"begin": "<%@",
 			"beginCaptures": {
 				"0": {
@@ -146,9 +143,6 @@
 			},
 			"patterns": [
 				{
-					"include": "#EntityDecl"
-				},
-				{
 					"include": "#parameterEntity"
 				},
 				{
@@ -169,27 +163,6 @@
 				}
 			}
 			
-		},
-		"singlequotedString": {
-			"name": "string.quoted.single.fml",
-			"begin": "'",
-			"beginCaptures": {
-				"0": {
-					"name": "punctuation.definition.string.begin.fml"
-				}
-			},
-			"end": "'",
-			"endCaptures": {
-				"0": {
-					"name": "punctuation.definition.string.end.fml"
-				}
-			},
-			
-			"patterns": [
-				{
-					"include": "#entity"
-				}
-			]
 		},
 		"tagStuff": {
 			"patterns": [
