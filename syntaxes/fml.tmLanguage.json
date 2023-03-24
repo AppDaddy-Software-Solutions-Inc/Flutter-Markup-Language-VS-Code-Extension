@@ -57,7 +57,7 @@
 		},
 		"evaluation": {
 			"match": "(?<=^|[\"])=[^\"]+(?=\"|$)",
-			"name": "constant.numeric.decimal.fml",
+			"name": "meta.preprocessor.numeric.fml",
 			"captures": {
 				"0": {
 					"patterns": [
@@ -71,7 +71,7 @@
 		},
 		"events": {
 			"match": "(?:\\w+\\.)?(?<event>\\w+)\\((?:[^\"\\)]*)\\)(?:\\s*;?\\s*(?=$|\\w+\\.|[\\s\";]))?",
-			"name": "entity.name.function.fml",
+			"name": "entity.other.attribute-name.class.css",
 			"captures": {
 				"0": {
 					"patterns": [
@@ -83,8 +83,16 @@
 			}
 		},
 		"binding": {
+			"patterns": [
+			 {
 			"match": "\\{[\\w\\-\\._#]+\\}",
-			"name": "invalid.deprecated.comment-unsupported-language.fml"
+			"name": "token.debug-token.fml"
+		     },
+			 {
+			"match": "\\'{[\\w\\-\\._#]+\\}'",
+			"name": "invalid"
+		     }
+		]
 		},
 		"internalSubset": {
 			"begin": "(\\[)",
