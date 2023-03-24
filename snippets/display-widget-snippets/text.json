@@ -1,0 +1,17 @@
+{
+  "TEXT [FML]": {
+    "prefix": ["<TEXT"],
+    "body": ["<TEXT label=\"\" />"],
+    "description": "A Text template"
+  },
+  "TEXT (unencoded) [FML]": {
+    "prefix": ["<TEXT"],
+    "body": ["<TEXT>\n    <![CDATA[unencodedtexthere]]>\n</TEXT>"],
+    "description": "An unencoded Text template using CDATA"
+  },
+  "TEXT SPAN [FML]": {
+    "prefix": ["<TEXT", "<SPAN"],
+    "body": ["<SPAN>\r\n\t<TEXT>emphasize</TEXT>\r\n\t<TEXT bold=\"true\">this</TEXT>\r\n\t<TEXT>text</TEXT>\r\n</SPAN>"],
+    "description": "A Text Span template"
+  }
+}

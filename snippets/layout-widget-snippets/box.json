@@ -1,0 +1,23 @@
+{
+  "BOX (default) [FML]": {
+    "prefix": ["<BOX"],
+    "body": [
+      "<BOX layout=\"column\" expand=\"true\" center=\"false\" width=\"100%\" height=\"100%\" color=\"\" radius=\"0\">\n\n</BOX>"
+    ],
+    "description": "A Box with default attributes applied"
+  },
+  "BOX (centered-column) [FML]": {
+    "prefix": ["<BOX"],
+    "body": [
+      "<BOX layout=\"column\" expand=\"true\" center=\"true\" width=\"100%\" height=\"100%\" color=\"\" radius=\"0\">\n\n</BOX>"
+    ],
+    "description": "A Box with a centered column layout"
+  },
+  "BOX (centered-row) [FML]": {
+    "prefix": ["<BOX"],
+    "body": [
+      "<BOX layout=\"row\" expand=\"true\" center=\"true\" width=\"100%\" height=\"100%\" color=\"\" radius=\"0\">\n\n</BOX>"
+    ],
+    "description": "A Box with a centered row layout"
+  }
+}

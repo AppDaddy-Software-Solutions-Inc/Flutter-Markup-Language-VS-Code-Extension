@@ -1,0 +1,10 @@
+{
+    "GET (default) [FML]": {
+      "prefix": ["<GET"],
+      "body": [
+        "<GET id=\"\" url=\"\" autoexecute=\"true\" />"
+      ],
+      "description": "A HTTP GET Datasource"
+    }
+  }
+  

@@ -7,7 +7,8 @@
     "vscode": "^1.76.0"
   },
   "categories": [
-    "Programming Languages"
+    "Programming Languages",
+    "Snippets"
   ],
   "contributes": {
     "languages": [{
@@ -20,6 +21,32 @@
       "language": "fml",
       "scopeName": "source.fml",
       "path": "./syntaxes/fml.tmLanguage.json"
-    }]
+    }],
+    "snippets": [
+      {
+        "language": "fml",
+        "path": "./snippets/data-interface-widget-snippets/table.json"
+      },
+      {
+        "language": "fml",
+        "path": "./snippets/datasource-snippets/get.json"
+      },
+      {
+        "language": "fml",
+        "path": "./snippets/display-widget-snippets/text.json"
+      },
+      {
+        "language": "fml",
+        "path": "./snippets/interactive-widget-snippets/button.json"
+      },
+      {
+        "language": "fml",
+        "path": "./snippets/layout-widget-snippets/box.json"
+      },
+      {
+        "language": "fml",
+        "path": "./snippets/utility-widget-snippets/variable.json"
+      }
+    ]
   }
 }
