@@ -2,7 +2,6 @@
 	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
 	"name": "Flutter Markup Language",
 	"patterns": [
-		
 		{
 			"include": "#comments"
 		},
@@ -31,14 +30,10 @@
 				{
 					"include": "#tagStuff"
 				}
-				
 			]
 		},
 		{
 			"include": "#entity"
-		},
-		{
-			"include": "#bare-ampersand"
 		},
 		{
 			"begin": "<%@",
@@ -98,22 +93,6 @@
 		}
 	],
 	"repository": {
-		"reserved-id": {
-			"patterns": [
-				{
-					"match": "id=\"\\b(user|system|clock|global|stash|template)\\b\"",
-					"captures": {
-						"0": {
-							"name": "invalid.illegal.bad-comments-or-CDATA.fml"
-						}
-					}
-				}
-			]
-		},
-		"bare-ampersand": {
-			"match": "&",
-			"name": "invalid.illegal.bad-ampersand.fml"
-		},
 		"doublequotedString": {
 			"begin": "\"",
 			"beginCaptures": {
@@ -133,32 +112,51 @@
 					"include": "#evaluation"
 				},
 				{
-					"include": "#binding"
+					"include": "#events"
 				}
 			]
 		},
 		"evaluation": {
-			"match": "(?<==)(.*?)(?=\")",
-			"captures": {
-				"1": {
-					"name": "invalid.illegal.bad-comments-or-CDATA.fml"
+			"patterns": [
+				{
+					"include": "#binding"
+				},
+				{
+					"match": "(?<=^|[\"])=[^\"]+(?=\"|$)",
+					"captures": {
+						"0": {
+							"name": "constant.numeric.decimal.fml"
+						}
+					}
 				}
-			}
+			]
 		},
-
-		"binding": {
-			"match": "({)(.*?)(})",
-			"captures": {
-				"1": {
-					"name": "invalid.illegal.bad-comments-or-CDATA.fml"
+		"events": {
+			"patterns": [
+				{
+					"include": "#binding"
 				},
-				"2": {
-					"name": "invalid.illegal.bad-comments-or-CDATA.fml"
-				},
-				"3": {
-					"name": "invalid.illegal.bad-comments-or-CDATA.fml"
+				{
+					"match": "(?:\\w+\\.)?(?<event>\\w+)\\((?:[^\"\\)]*)\\)(?:\\s*;?\\s*(?=$|\\w+\\.|[\\s\";]))?",
+					"captures": {
+						"0": {
+							"name": "entity.name.function.fml"
+						}
+					}
 				}
-			}
+			]
+		},
+		"binding": {
+			"patterns": [
+				{
+					"match": "{[a-zA-Z0-9_.-]+}",
+					"captures": {
+						"0": {
+							"name": "invalid.deprecated.comment-unsupported-language.fml"
+						}
+					}
+				}
+			]
 		},
 		"restrictedID": {
 			"match": "(id=\")",
@@ -224,9 +222,6 @@
 			"patterns": [
 				{
 					"include": "#entity"
-				},
-				{
-					"include": "#bare-ampersand"
 				}
 			]
 		},
@@ -258,12 +253,12 @@
 			"patterns": [
 				{
 					"begin": "<%--",
+					"end": "--%>",
+					"name": "comment.block.fml",
 					"captures": {
 						"0": {
 							"name": "punctuation.definition.comment.fml"
-						},
-						"end": "--%>",
-						"name": "comment.block.fml"
+						}
 					}
 				},
 				{
