@@ -1,0 +1,32 @@
+<!-- Welcome to FmlPad! -->
+<FML>
+    <!-- Remember, the template is a STACK by default and non scrollable! -->
+    <!-- For scrolling, try out the SCROLL widget! -->
+    <SYSTEM center="true" pad="40">
+        <!-- title bar -->
+        <ROW center="true">
+            <IMAGE height="50" url="assets://applications/fmlpad/fmlpad.png"/>
+            <PAD right="10"/>
+            <TEXT value="**Welcome to FMLPad!**" style="h4" onclick="=jah" color="{THEME.primary}"/>
+        </ROW>
+        <!-- text block -->
+        <PAD top="20"/>
+        <TEXT  id="user" value="***FmlPad** allows you to test and develop FML templates **realtime** _without the need to compile_ any code.*" size="14"/>
+        <!-- text block -->
+        <PAD top="10"/>
+        <TEXT id="hehlo" value="*Try adding, removing or changing any of the markup text in the left editor window and see your changes reflected here instantly.*" size="14"/>
+        <!-- text block -->
+        <PAD top="10"/>
+
+        <TEXT value="=&***FmlPad** itself it written entirely in **FML** with less than a few dozen simple lines of markup text!*" size="14">
+
+        <TEXT>
+        <!-- text block -->
+        <PAD top="20"/>
+        <ICON icon="face" color="{THEME.primary}"/>
+        <PAD top="5"/>
+        <TEXT value="{Templating}...*" size="14"/>
+        <PAD top="5"/>
+        <TEXT italic="true" value="**The FML Development Team**" size="14"/>
+    </BOX>
+</FML>

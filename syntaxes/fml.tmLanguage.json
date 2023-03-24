@@ -1,0 +1,293 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "Flutter Markup Language",
+	"patterns": [
+		
+		{
+			"include": "#comments"
+		},
+		{
+			"begin": "(</?)(?:([-\\w\\.]+)((:)))?([-\\w\\.:]+)",
+			"captures": {
+				"1": {
+					"name": "punctuation.definition.tag.fml"
+				},
+				"2": {
+					"name": "entity.name.tag.namespace.fml"
+				},
+				"3": {
+					"name": "entity.name.tag.fml"
+				},
+				"4": {
+					"name": "punctuation.separator.namespace.fml"
+				},
+				"5": {
+					"name": "entity.name.tag.localname.fml"
+				}
+			},
+			"end": "(/?>)",
+			"name": "meta.tag.fml",
+			"patterns": [
+				{
+					"include": "#tagStuff"
+				}
+				
+			]
+		},
+		{
+			"include": "#entity"
+		},
+		{
+			"include": "#bare-ampersand"
+		},
+		{
+			"begin": "<%@",
+			"beginCaptures": {
+				"0": {
+					"name": "punctuation.section.embedded.begin.fml"
+				}
+			},
+			"end": "%>",
+			"endCaptures": {
+				"0": {
+					"name": "punctuation.section.embedded.end.fml"
+				}
+			},
+			"name": "source.java-props.embedded.fml",
+			"patterns": [
+				{
+					"match": "page|include|taglib",
+					"name": "keyword.other.page-props.fml"
+				}
+			]
+		},
+		{
+			"begin": "<%[!=]?(?!--)",
+			"beginCaptures": {
+				"0": {
+					"name": "punctuation.section.embedded.begin.fml"
+				}
+			},
+			"end": "(?!--)%>",
+			"endCaptures": {
+				"0": {
+					"name": "punctuation.section.embedded.end.fml"
+				}
+			},
+			"name": "source.java.embedded.fml",
+			"patterns": [
+				{
+					"include": "source.java"
+				}
+			]
+		},
+		{
+			"begin": "<!\\[CDATA\\[",
+			"beginCaptures": {
+				"0": {
+					"name": "punctuation.definition.string.begin.fml"
+				}
+			},
+			"end": "]]>",
+			"endCaptures": {
+				"0": {
+					"name": "punctuation.definition.string.end.fml"
+				}
+			},
+			"name": "string.unquoted.cdata.fml"
+		}
+	],
+	"repository": {
+		"reserved-id": {
+			"patterns": [
+				{
+					"match": "id=\"\\b(user|system|clock|global|stash|template)\\b\"",
+					"captures": {
+						"0": {
+							"name": "invalid.illegal.bad-comments-or-CDATA.fml"
+						}
+					}
+				}
+			]
+		},
+		"bare-ampersand": {
+			"match": "&",
+			"name": "invalid.illegal.bad-ampersand.fml"
+		},
+		"doublequotedString": {
+			"begin": "\"",
+			"beginCaptures": {
+				"0": {
+					"name": "punctuation.definition.string.begin.fml"
+				}
+			},
+			"end": "\"",
+			"endCaptures": {
+				"0": {
+					"name": "punctuation.definition.string.end.fml"
+				}
+			},
+			"name": "string.quoted.double.fml",
+			"patterns": [
+				{
+					"include": "#evaluation"
+				},
+				{
+					"include": "#binding"
+				}
+			]
+		},
+		"evaluation": {
+			"match": "(?<==)(.*?)(?=\")",
+			"captures": {
+				"1": {
+					"name": "invalid.illegal.bad-comments-or-CDATA.fml"
+				}
+			}
+		},
+
+		"binding": {
+			"match": "({)(.*?)(})",
+			"captures": {
+				"1": {
+					"name": "invalid.illegal.bad-comments-or-CDATA.fml"
+				},
+				"2": {
+					"name": "invalid.illegal.bad-comments-or-CDATA.fml"
+				},
+				"3": {
+					"name": "invalid.illegal.bad-comments-or-CDATA.fml"
+				}
+			}
+		},
+		"restrictedID": {
+			"match": "(id=\")",
+			"captures": {
+				"1": {
+					"name": "invalid.illegal.bad-comments-or-CDATA.fml"
+				},
+				"2": {
+					"name": "invalid.illegal.bad-comments-or-CDATA.fml"
+				},
+				"3": {
+					"name": "invalid.illegal.bad-comments-or-CDATA.fml"
+				}
+			}
+		},
+		"internalSubset": {
+			"begin": "(\\[)",
+			"captures": {
+				"1": {
+					"name": "punctuation.definition.constant.fml"
+				}
+			},
+			"end": "(\\])",
+			"name": "meta.internalsubset.fml",
+			"patterns": [
+				{
+					"include": "#EntityDecl"
+				},
+				{
+					"include": "#parameterEntity"
+				},
+				{
+					"include": "#comments"
+				}
+			]
+		},
+		"parameterEntity": {
+			"captures": {
+				"1": {
+					"name": "punctuation.definition.constant.fml"
+				},
+				"3": {
+					"name": "punctuation.definition.constant.fml"
+				}
+			},
+			"match": "(%)([:a-zA-Z_][:a-zA-Z0-9_.-]*)(;)",
+			"name": "constant.character.parameter-entity.fml"
+		},
+		"singlequotedString": {
+			"begin": "'",
+			"beginCaptures": {
+				"0": {
+					"name": "punctuation.definition.string.begin.fml"
+				}
+			},
+			"end": "'",
+			"endCaptures": {
+				"0": {
+					"name": "punctuation.definition.string.end.fml"
+				}
+			},
+			"name": "string.quoted.single.fml",
+			"patterns": [
+				{
+					"include": "#entity"
+				},
+				{
+					"include": "#bare-ampersand"
+				}
+			]
+		},
+		"tagStuff": {
+			"patterns": [
+				{
+					"captures": {
+						"1": {
+							"name": "entity.other.attribute-name.namespace.fml"
+						},
+						"2": {
+							"name": "entity.other.attribute-name.fml"
+						},
+						"3": {
+							"name": "punctuation.separator.namespace.fml"
+						},
+						"4": {
+							"name": "entity.other.attribute-name.localname.fml"
+						}
+					},
+					"match": "(?:^|\\s+)(?:([-\\w.]+)((:)))?([-\\w.:]+)\\s*="
+				},
+				{
+					"include": "#doublequotedString"
+				}
+			]
+		},
+		"comments": {
+			"patterns": [
+				{
+					"begin": "<%--",
+					"captures": {
+						"0": {
+							"name": "punctuation.definition.comment.fml"
+						},
+						"end": "--%>",
+						"name": "comment.block.fml"
+					}
+				},
+				{
+					"begin": "<!--",
+					"captures": {
+						"0": {
+							"name": "punctuation.definition.comment.fml"
+						}
+					},
+					"end": "-->",
+					"name": "comment.block.fml",
+					"patterns": [
+						{
+							"begin": "--(?!>)",
+							"captures": {
+								"0": {
+									"name": "invalid.illegal.bad-comments-or-CDATA.fml"
+								}
+							}
+						}
+					]
+				}
+			]
+		}
+	},
+	"scopeName": "source.fml"
+}

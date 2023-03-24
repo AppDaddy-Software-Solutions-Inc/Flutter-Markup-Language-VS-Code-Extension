@@ -1,0 +1,25 @@
+{
+  "name": "FML",
+  "displayName": "Flutter Markup Language",
+  "description": "Flutter Markup Language",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.76.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "fml",
+      "aliases": ["Flutter Markup Language", "fml"],
+      "extensions": [".xml"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "fml",
+      "scopeName": "source.fml",
+      "path": "./syntaxes/fml.tmLanguage.json"
+    }]
+  }
+}
