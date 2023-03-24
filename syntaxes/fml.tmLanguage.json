@@ -6,74 +6,15 @@
 			"include": "#comments"
 		},
 		{
-			"begin": "(</?)(?:([-\\w\\.]+)((:)))?([-\\w\\.:]+)",
-			"captures": {
-				"1": {
-					"name": "punctuation.definition.tag.fml"
-				},
-				"2": {
-					"name": "entity.name.tag.namespace.fml"
-				},
-				"3": {
-					"name": "entity.name.tag.fml"
-				},
-				"4": {
-					"name": "punctuation.separator.namespace.fml"
-				},
-				"5": {
-					"name": "entity.name.tag.localname.fml"
-				}
-			},
-			"end": "(/?>)",
-			"name": "meta.tag.fml",
-			"patterns": [
-				{
-					"include": "#tagStuff"
-				}
-			]
+			"include": "#outerElement"
 		},
 		{
-			"begin": "<%@",
-			"beginCaptures": {
-				"0": {
-					"name": "punctuation.section.embedded.begin.fml"
-				}
-			},
-			"end": "%>",
-			"endCaptures": {
-				"0": {
-					"name": "punctuation.section.embedded.end.fml"
-				}
-			},
-			"name": "source.java-props.embedded.fml",
-			"patterns": [
-				{
-					"match": "page|include|taglib",
-					"name": "keyword.other.page-props.fml"
-				}
-			]
-		},
-		{
-			"begin": "<%[!=]?(?!--)",
-			"beginCaptures": {
-				"0": {
-					"name": "punctuation.section.embedded.begin.fml"
-				}
-			},
-			"end": "(?!--)%>",
-			"endCaptures": {
-				"0": {
-					"name": "punctuation.section.embedded.end.fml"
-				}
-			},
-			"name": "source.java.embedded.fml",
-			"patterns": [
-				{
-					"include": "source.java"
-				}
-			]
-		},
-		{
+			"include": "#cdata"
+		}
+	],
+	"repository": {
+		
+		"cdata": {
 			"begin": "<!\\[CDATA\\[",
 			"beginCaptures": {
 				"0": {
@@ -87,9 +28,7 @@
 				}
 			},
 			"name": "string.unquoted.cdata.fml"
-		}
-	],
-	"repository": {
+		},
 		"doublequotedString": {
 			"begin": "\"",
 			"beginCaptures": {
@@ -119,14 +58,29 @@
 		"evaluation": {
 			"match": "(?<=^|[\"])=[^\"]+(?=\"|$)",
 			"name": "constant.numeric.decimal.fml",
-			"patterns": [
-			]
+			"captures": {
+				"0": {
+					"patterns": [
+						{
+						 "include": "#binding"
+						}
+					]
+				}
+			}
+			
 		},
 		"events": {
 			"match": "(?:\\w+\\.)?(?<event>\\w+)\\((?:[^\"\\)]*)\\)(?:\\s*;?\\s*(?=$|\\w+\\.|[\\s\";]))?",
 			"name": "entity.name.function.fml",
-			"patterns": [
-			]
+			"captures": {
+				"0": {
+					"patterns": [
+						{
+						 "include": "#binding"
+						}
+					]
+				}
+			}
 		},
 		"binding": {
 			"match": "\\{[\\w\\-\\._#]+\\}",
@@ -147,6 +101,33 @@
 				},
 				{
 					"include": "#comments"
+				}
+			]
+		},
+		"outerElement": {
+			"begin": "(</?)(?:([-\\w\\.]+)((:)))?([-\\w\\.:]+)",
+			"end": "(/?>)",
+			"name": "meta.tag.fml",
+			"captures": {
+				"1": {
+					"name": "punctuation.definition.tag.fml"
+				},
+				"2": {
+					"name": "entity.name.tag.namespace.fml"
+				},
+				"3": {
+					"name": "entity.name.tag.fml"
+				},
+				"4": {
+					"name": "punctuation.separator.namespace.fml"
+				},
+				"5": {
+					"name": "entity.name.tag.localname.fml"
+				}
+			},
+			"patterns": [
+				{
+					"include": "#tagStuff"
 				}
 			]
 		},
