@@ -1,0 +1,9 @@
+{
+    "VAR [FML]": {
+      "prefix": ["<VAR"],
+      "body": [
+        "<VAR id=\"\" value=\"\" />"
+      ],
+      "description": "A Variable template"
+    }
+  }

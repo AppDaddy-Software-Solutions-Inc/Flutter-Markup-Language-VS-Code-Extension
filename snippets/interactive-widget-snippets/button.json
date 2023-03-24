@@ -1,0 +1,22 @@
+{
+  "BUTTON (text) [FML]": {
+    "prefix": ["<BUTTON"],
+    "body": ["<BUTTON label=\"Button\" onclick=\"\" />"],
+    "description": "A Button template"
+  },
+  "BUTTON (elevated) [FML]": {
+    "prefix": ["<BUTTON"],
+    "body": ["<BUTTON label=\"Button\" type=\"elevated\" onclick=\"\" />"],
+    "description": "An Elevated Button template"
+  },
+  "BUTTON (outlined) [FML]": {
+    "prefix": ["<BUTTON"],
+    "body": ["<BUTTON label=\"Button\" type=\"outlined\" onclick=\"\" />"],
+    "description": "An Outlined Button template"
+  },
+  "BUTTON (icon) [FML]": {
+    "prefix": ["<BUTTON"],
+    "body": ["<BUTTON type=\"outlined\" onclick=\"\">\r\n    <TEXT label=\"Go\" />\r\n    <ICON icon=\"keyboard_arrow_right\" />\r\n</BUTTON>"],
+    "description": "An Icon Button template"
+  }
+}
