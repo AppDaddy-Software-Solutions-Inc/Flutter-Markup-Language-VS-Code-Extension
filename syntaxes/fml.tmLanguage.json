@@ -63,11 +63,31 @@
 					"patterns": [
 						{
 						 "include": "#binding"
+						},
+						{
+							"include": "#singleQuoteMatch"
 						}
 					]
 				}
 			}
 			
+		},
+		"singleQuoteMatch": {
+			"patterns":[
+			
+			{
+				"match": "(?<!\\\\)('(?:[^'\\\\]|\\\\.)*')|(?<!\\\\)('(?:[^'\\\\]|\\\\.)*)\\b",
+				
+				"captures": {
+					"1": {
+						"name": "punctuation.definition.quote.begin.markdown.fml"
+					},
+					"2": {
+						"name": "invalid.fml"
+					}
+				}
+			}
+		]
 		},
 		"events": {
 			"match": "(?:\\w+\\.)?(?<event>\\w+)\\((?:[^\"\\)]*)\\)(?:\\s*;?\\s*(?=$|\\w+\\.|[\\s\";]))?",
@@ -90,7 +110,7 @@
 		     },
 			 {
 			"match": "\\'{[\\w\\-\\._#]+\\}'",
-			"name": "invalid"
+			"name": "invalid.fml"
 		     }
 		]
 		},
@@ -182,20 +202,20 @@
 				{
 					"begin": "<%--",
 					"end": "--%>",
-					"name": "comment.block.fml",
+					"name": "token.warn-token.fml",
 					"captures": {
 						"0": {
-							"name": "punctuation.definition.comment.fml"
+							"name": "token.warn-token.fml"
 						}
 					}
 				},
 				{
 					"begin": "<!--",
 					"end": "-->",
-					"name": "comment.block.fml",
+					"name": "token.warn-token.fml",
 					"captures": {
 						"0": {
-							"name": "punctuation.definition.comment.fml"
+							"name": "token.warn-token.fml"
 						}
 					}
 				}
