@@ -1,3 +1,3 @@
 # FML README
 
-This is the readme for the VSCODE syntax highlighting extending microsofts xml syntax highlighting to include features of FML and exclude unused features.
+Repo for VS Code tmLanguage Grammer Extension - syntax highlighting, snippets, autocomplete and intellisense extending XML to include the FML grammar.
