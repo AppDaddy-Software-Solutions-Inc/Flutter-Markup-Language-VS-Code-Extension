@@ -1,10 +1,16 @@
 {
-    "GET (default) [FML]": {
-      "prefix": ["<GET"],
-      "body": [
-        "<GET id=\"\" url=\"\" autoexecute=\"true\" />"
-      ],
-      "description": "A HTTP GET Datasource"
-    }
+  "GET (default) [FML]": {
+    "prefix": ["<GET"],
+    "body": [
+      "<GET id=\"${2}\" url=\"${1}\" autoexecute=\"true\"\n    onsuccess=\"\"\n    onfail=\"\" />"
+    ],
+    "description": "A HTTP GET Datasource snippet"
+  },
+  "GET (unencoded url w/ cdata) [FML]": {
+    "prefix": ["<GET"],
+    "body": [
+      "<GET id=\"${2}\" autoexecute=\"true\"\n    onsuccess=\"\"\n    onfail=\"\">\n    <URL><![CDATA[${1:unencodedurlhere}]]></URL>\n</GET>"
+    ],
+    "description": "A HTTP GET Datasource snippet"
   }
-  
+}

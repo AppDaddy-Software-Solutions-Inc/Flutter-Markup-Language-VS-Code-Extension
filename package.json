@@ -29,6 +29,10 @@
       },
       {
         "language": "fml",
+        "path": "./snippets/data-interface-widget-snippets/chart.json"
+      },
+      {
+        "language": "fml",
         "path": "./snippets/datasource-snippets/get.json"
       },
       {
