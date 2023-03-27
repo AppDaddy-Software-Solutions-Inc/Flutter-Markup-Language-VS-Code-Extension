@@ -1,22 +1,22 @@
 {
   "BUTTON (text) [FML]": {
-    "prefix": ["<BUTTON"],
-    "body": ["<BUTTON label=\"Button\" onclick=\"\" />"],
-    "description": "A Button template"
+    "prefix": ["<BUTTON", "BTN"],
+    "body": ["<BUTTON label=\"${2:Button}\" type=\"${1|text,outlined,elevated|}\" onclick=\"${3}\" />"],
+    "description": "A Button snippet"
   },
   "BUTTON (elevated) [FML]": {
-    "prefix": ["<BUTTON"],
-    "body": ["<BUTTON label=\"Button\" type=\"elevated\" onclick=\"\" />"],
-    "description": "An Elevated Button template"
+    "prefix": ["<BUTTON", "BTN"],
+    "body": ["<BUTTON label=\"${1:Button}\" type=\"elevated\" onclick=\"${2}\" />"],
+    "description": "An Elevated Button snippet"
   },
   "BUTTON (outlined) [FML]": {
-    "prefix": ["<BUTTON"],
-    "body": ["<BUTTON label=\"Button\" type=\"outlined\" onclick=\"\" />"],
-    "description": "An Outlined Button template"
+    "prefix": ["<BUTTON", "BTN"],
+    "body": ["<BUTTON label=\"${1:Button}\" type=\"outlined\" onclick=\"${2}\" />"],
+    "description": "An Outlined Button snippet"
   },
   "BUTTON (icon) [FML]": {
-    "prefix": ["<BUTTON"],
-    "body": ["<BUTTON type=\"outlined\" onclick=\"\">\r\n    <TEXT label=\"Go\" />\r\n    <ICON icon=\"keyboard_arrow_right\" />\r\n</BUTTON>"],
-    "description": "An Icon Button template"
+    "prefix": ["<BUTTON", "BTN"],
+    "body": ["<BUTTON type=\"outlined\" onclick=\"${2}\">\r\n    <TEXT label=\"${1:Go}\" />\r\n    <ICON icon=\"keyboard_arrow_right\" />\r\n</BUTTON>"],
+    "description": "An Icon Button snippet"
   }
 }

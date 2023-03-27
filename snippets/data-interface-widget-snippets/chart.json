@@ -1,0 +1,23 @@
+{
+    "Pie CHART [FML]": {
+      "prefix": ["<CHART"],
+      "body": ["<CHART id=\"${2}\" type=\"pie\" showlegend=\"bottom\">\r\n\t<XAXIS type=\"category\" title=\"Money\" />\r\n\t<YAXIS type=\"numeric\" />\r\n\t<SERIES name=\"\" type=\"pie\" data=\"${1}\" x=\"{data.x}\" y=\"{data.y}\" label=\"{data.x}: {data.y}\" />\r\n</CHART>"],
+      "description": "A Pie Chart snippet"
+    },
+    "Bar CHART [FML]": {
+      "prefix": ["<CHART"],
+      "body": ["<CHART id=\"${2}\">\r\n\t<XAXIS type=\"category\" title=\"Category\"/>\r\n\t<YAXIS type=\"numeric\" title=\"Number\" />\r\n\t<SERIES id=\"${3}\" name=\"Bar Series 1\" group=\"1\" type=\"bar\" data=\"${1}\" x=\"{data.x}\" y=\"{data.y}\" color=\"lightblue\" />\r\n</CHART>"],
+      "description": "A Bar Chart snippet"
+    },
+    "Multi-Series Line CHART [FML]": {
+      "prefix": ["<CHART"],
+      "body": ["<CHART id=\"${2}\" showlegend=\"true\">\r\n\t<XAXIS type=\"category\" title=\"Category\" />\r\n\t<YAXIS type=\"numeric\" title=\"Number\" />\r\n\t<SERIES id=\"${3}\" name=\"Line Series 1\" type=\"line\" data=\"${1}\" x=\"{data.x1}\" y=\"{data.y1}\" color=\"\" stroke=\"2\" showarea=\"true\" showpoints=\"false\" />\r\n\t<SERIES id=\"${4}\" name=\"Line Series 2\" type=\"line\" data=\"${1}\" x=\"{data.x2}\" y=\"={data.y2}\" color=\"\" stroke=\"4.5\" radius=\"5\"/>\r\n\t<SERIES id=\"${5}\" name=\"Line Series 3\" type=\"line\" data=\"${1}\" x=\"{data.x3}\" y=\"={data.y3}\" color=\"\" showline=\"false\" radius=\"3.5\"/>\r\n</CHART>"],
+      "description": "A Line Chart snippet with multiple series"
+    },
+    "Combination Series CHART [FML]": {
+      "prefix": ["<CHART"],
+      "body": ["<CHART id=\"${2}\" showlegend=\"true\">\r\n\t<XAXIS type=\"category\" title=\"Category\" />\r\n\t<YAXIS type=\"numeric\" title=\"Number\" />\r\n\t<SERIES name=\"Bar Series 1\" type=\"bar\" data=\"${1}\" x=\"={data.x1}\" y=\"{data.y1}\" color=\"cyan\" stroke=\"1\" />\r\n\t<SERIES name=\"Line Series 1\" type=\"line\" data=\"${1}\" x=\"={data.x2}\" y=\"{data.y2}\" color=\"red\" stroke=\"2\" showarea=\"true\" showpoints=\"false\" />\r\n</CHART>"],
+      "description": "A Combination Chart snippet with both a Line & a Bar series"
+    }
+  }
+  
