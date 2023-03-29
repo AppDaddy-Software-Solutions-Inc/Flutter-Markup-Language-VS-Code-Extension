@@ -1,0 +1,16 @@
+{
+    "MENU (dynamic) [FML]": {
+      "prefix": ["<MENU"],
+      "body": [
+        "<MENU data=\"${1}\">\r\n\t<ITEM title=\"${2}\" subtitle=\"${3}\" url=\"${4}\" icon=\"${5}\" />\r\n</MENU>"
+      ],
+      "description": "A dynamic Menu snippet from a datasource"
+    },
+    "MENU (static) [FML]": {
+        "prefix": ["<MENU"],
+        "body": [
+            "<MENU>\r\n    <ITEM title=\"main.xml\" subtitle=\"Relative Link\" icon=\"developer_board\" url=\"templates/main.xml\"/>\r\n    <ITEM title=\"https://fml.dev\" subtitle=\"Absolute Link\" icon=\"insert_link\" url=\"https://fml.dev\"/>\r\n</MENU>"
+        ],
+        "description": "A static Menu snippet with 2 items"
+    }
+  }
