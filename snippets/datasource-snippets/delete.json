@@ -1,0 +1,17 @@
+{
+    "DELETE (empty request body) [FML]": {
+      "prefix": ["<DELETE"],
+      "body": [
+        "<DELETE id=\"${2}\" url=\"${1}\"\n    onsuccess=\"\"\n    onfail=\"\" />"
+      ],
+      "description": "A HTTP Delete Datasource snippet"
+    },
+    "DELETE (including request body w/ cdata) [FML]": {
+      "prefix": ["<DELETE"],
+      "body": [
+        "<DELETE id=\"${2}\" url=\"${1}\"\n    onsuccess=\"\"\n    onfail=\"\">\n    <BODY>\n        <![CDATA[${0}]]>\n    </BODY>\n</DELETE>"
+      ],
+      "description": "A HTTP Delete Datasource snippet"
+    }
+  }
+  
