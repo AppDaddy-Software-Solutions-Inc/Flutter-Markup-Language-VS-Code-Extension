@@ -1,0 +1,10 @@
+{
+    "GPS [FML]": {
+        "prefix": ["<GPS"],
+        "body": [
+            "<GPS id=\"gps\" autoexecute=\"true\"\nonsuccess=\"toast('lat: {gps.data.latitude}, long: {gps.data.longitude}');\" \nonfail=\"toast('Unable to access device location');\" />"
+        ],
+        "description": "A GPS Datasource snippet"
+    }
+}
+  

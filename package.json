@@ -53,7 +53,15 @@
       },
       {
         "language": "fml",
+        "path": "./snippets/datasource-snippets/filepicker.json"
+      },
+      {
+        "language": "fml",
         "path": "./snippets/datasource-snippets/get.json"
+      },
+      {
+        "language": "fml",
+        "path": "./snippets/datasource-snippets/gps.json"
       },
       {
         "language": "fml",
