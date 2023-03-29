@@ -1,0 +1,37 @@
+{
+    "FILEPICKER (default) [FML]": {
+        "prefix": ["<FILEPICKER"],
+        "body": [
+            "<FILEPICKER id=\"${1}\" allow=\"\" autoexeute=\"false\"\n    ondismissed=\"\"\n    onsuccess=\"\"/>"
+        ],
+        "description": "A File Picker Widget with the default attribute values"
+    },
+    "FILEPICKER (only allow image files) [FML]": {
+      "prefix": ["<FILEPICKER"],
+      "body": [
+        "<FILEPICKER id=\"${1}\" allow=\".jpg,.jpeg,.png,.gif\"\n    onsuccess=\"\"/>"
+      ],
+      "description": "A File Picker for basic image files"
+    },
+    "FILEPICKER Open Button [FML]": {
+        "prefix": ["<FILEPICKER"],
+        "body": [
+            "<BUTTON onclick=\"${1:FILEPICKER_ID_HERE}.start()\">\r\n    <ICON icon=\"file_present_rounded\" />\r\n    <TEXT value=\"Attach File\" />\r\n</BUTTON>"
+        ],
+        "description": "A button to open the File Picker"
+    },
+    "FILEPICKER (File selected upload via HTTP POST) [FML]": {
+        "prefix": ["<FILEPICKER"],
+        "body": [
+            "<POST id=\"postbroker\" url=\"${1}\" \r\nonsuccess=\"toast('File Uploaded')\" \r\nonfail=\"toast('File Failed to Upload: {postbroker.statusmessage}')\">\r\n    <BODY>\r\n        <FILE>\r\n            <data><![CDATA[{fp.data.file}]]></data>\r\n            <name><![CDATA[{fp.data.name}]]></name>\r\n            <type><![CDATA[{fp.data.type}]]></type>\r\n            <size>{fp.data.size}</size>\r\n            <extension>{fp.data.extension}</extension>\r\n        </FILE>\r\n    </BODY>\r\n</POST>\r\n\r\n<FILEPICKER id=\"fp\" allow=\"\" autoexecute=\"true\"\r\nonsuccess=\"postbroker.start()\" />"
+        ],
+        "description": "A full example of File Picker with a HTTP POST file upload"
+    },
+    "FILEPICKER (File selected upload via WebSocket) [FML]": {
+        "prefix": ["<FILEPICKER"],
+        "body": [
+            "<SOCKET id=\"socket\" url=\"wss://${1}?bytes={fp.data.size}&amp;extension={fp.data.extension}\" autoexecute=\"true\"\r\n    onsuccess=\"toast('File Uploaded');\"\r\n    onfail=\"toast('File Failed to Upload: {socket.statusmessage}');\">\r\n    <BODY>\r\n        <![CDATA[{fp.data.file}]]>\r\n    </BODY>\r\n</SOCKET>\r\n\r\n<FILEPICKER id=\"fp\" allow=\"\" autoexecute=\"true\"\r\nonsuccess=\"socket.send()\" />"
+        ],
+        "description": "A full example of File picker with a websocket file upload"
+    }
+  }
