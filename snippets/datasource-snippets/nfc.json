@@ -1,0 +1,9 @@
+{
+    "NFC (read) [FML]": {
+        "prefix": ["<NFC"],
+        "body": [
+            "<NFC id=\"tag\" \r\nonsuccess=\"toast('Recieved: {tag.received}, Serial: {tag.serial}, Payload: {tag.payload}');\"\r\nonfail=\"\" />"
+        ],
+        "description": "A NFC Read snippet"
+    }
+}

@@ -69,6 +69,10 @@
       },
       {
         "language": "fml",
+        "path": "./snippets/datasource-snippets/nfc.json"
+      },
+      {
+        "language": "fml",
         "path": "./snippets/display-widget-snippets/text.json"
       },
       {
