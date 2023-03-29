@@ -1,0 +1,10 @@
+{
+    "DATA (default) [FML]": {
+      "prefix": ["<DATA"],
+      "body": [
+        "<DATA id=\"MONTHS\" root=\"SET.MONTH\">\r\n    <VALUE>\r\n    <![CDATA[\r\n        <SET>\r\n            <MONTH>\r\n                <number>1</number>\r\n                <name>January</month>\r\n            </MONTH>\r\n            <MONTH>\r\n                <number>2</number>\r\n                <name>February</name>\r\n            </MONTH>\r\n            <MONTH>\r\n                <number>3</number>\r\n                <name>March</name>\r\n            </MONTH>\r\n            <MONTH>\r\n                <number>4</number>\r\n                <name>April</name>\r\n            </MONTH>\r\n            <MONTH>\r\n                <number>5</number>\r\n                <name>May</name>\r\n            </MONTH>\r\n            <MONTH>\r\n                <number>6</number>\r\n                <name>June</name>\r\n            </MONTH>\r\n            <MONTH>\r\n                <number>7</number>\r\n                <name>July</name>\r\n            </MONTH>\r\n            <MONTH>\r\n                <number>8</number>\r\n                <name>August</name>\r\n            </MONTH>\r\n            <MONTH>\r\n                <number>9</number>\r\n                <name>September</name>\r\n            </MONTH>\r\n            <MONTH>\r\n                <number>10</number>\r\n                <name>October</name>\r\n            </MONTH>\r\n            <MONTH>\r\n                <number>11</number>\r\n                <name>November</name>\r\n            </MONTH>\r\n            <MONTH>\r\n                <number>12</number>\r\n                <name>December</name>\r\n            </MONTH>\r\n        </SET>\r\n    ]]>\r\n    </VALUE>\r\n</DATA>"
+      ],
+      "description": "A Data Datasource snippet example"
+    }
+  }
+  
