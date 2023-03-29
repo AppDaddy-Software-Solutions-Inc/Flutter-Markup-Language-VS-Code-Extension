@@ -1,0 +1,30 @@
+{
+    "CAMERA (w/ controls) [FML]": {
+        "prefix": ["<CAMERA"],
+        "body": [
+            "<CAMERA id=\"cam\" controls=\"true\" width=\"100%\" height=\"100%\"\r\n    onsuccess=\"\" \r\n    onfail=\"alert('We were unable to access your camera, please enter your details or try again.')\">\r\n</CAMERA>"
+        ],
+        "description": "A camera view with a picture-in-picture view of the last photo taken"
+    },
+    "CAMERA (w/ Picture-In-Picture) [FML]": {
+      "prefix": ["<CAMERA"],
+      "body": [
+        "<CAMERA id=\"cam\" controls=\"true\" width=\"100%\" height=\"100%\"\r\n    onsuccess=\"\" \r\n    onfail=\"alert('We were unable to access your camera, please enter your details or try again.')\">\r\n    <!-- Picture-In-Picture  -->\r\n    <POS bottom=\"15\" right=\"15\" visible=\"=!noe({cam.data.file})\">\r\n        <BOX expand=\"false\" width=\"30%\" border=\"all\" bordercolor=\"amber\" radius=\"5\">\r\n            <IMAGE url=\"{cam.data.file}\"/>\r\n        </BOX>\r\n    </POS>\r\n</CAMERA>"
+      ],
+      "description": "A camera view with a picture-in-picture view of the last photo taken"
+    },
+    "CAMERA (Camera Image upload via HTTP POST) [FML]": {
+        "prefix": ["<CAMERA"],
+        "body": [
+            "<POST id=\"postbroker\" url=\"${1}\" \r\nonsuccess=\"toast('Image Uploaded')\" \r\nonfail=\"toast('Image Failed to Upload: {postbroker.statusmessage}')\">\r\n    <BODY>\r\n        <![CDATA[{cam.data.file}]]>\r\n    </BODY>\r\n</POST>\r\n<CAMERA id=\"cam\" enabled=\"=!{postbroker.busy}\" controls=\"true\"  width=\"100%\" height=\"100%\"\r\n    onsuccess=\"postbroker.start();\" \r\n    onfail=\"toast('Access your camera is blocked, you may need to adjust your privacy settings.', 10)\">\r\n    <CENTER>\r\n        <BUSY id=\"busy\" visible=\"={postbroker.busy}\" width=\"100%\" height=\"100%\"/>\r\n    </CENTER>\r\n</CAMERA>"
+        ],
+        "description": "A full example of camera with a HTTP POST image upload"
+    },
+    "CAMERA (Camera Image upload via WebSocket) [FML]": {
+        "prefix": ["<CAMERA"],
+        "body": [
+            "<SOCKET id=\"socket\" url=\"wss://${1}?bytes={cam.data.size}\" autoexecute=\"true\"\r\n    onsuccess=\"toast('Image Uploaded');\"\r\n    onfail=\"toast('Image Failed to Upload: {socket.statusmessage}');\">\r\n    <BODY>\r\n        <![CDATA[{cam.data.file}]]>\r\n    </BODY>\r\n</SOCKET>\r\n\r\n<CAMERA id=\"cam\" enabled=\"=!{socket.busy}\" controls=\"true\"  width=\"100%\" height=\"100%\"\r\n    onsuccess=\"socket.send();\" \r\n    onfail=\"alert('We were unable to access your camera, please enter your details or try again.')\">\r\n    <CENTER>\r\n        <!-- If the backend supports response codes you can set the visibility of busy on camera's onsuccess and socket's onsuccess/fail -->\r\n        <!-- <BUSY id=\"busy\" visible=\"false\" width=\"100%\" height=\"100%\"/> -->\r\n        <!-- If the backend supports responses you can send the % uploaded in the message -->\r\n        <!-- <TEXT style=\"h5\" bold=\"true\" value=\"{socket.data.message}\" color=\"amber\" elevation=\"1\" halign=\"center\" /> -->\r\n    </CENTER>\r\n</CAMERA>"
+        ],
+        "description": "A full example of camera with a websocket image upload"
+    }
+  }
