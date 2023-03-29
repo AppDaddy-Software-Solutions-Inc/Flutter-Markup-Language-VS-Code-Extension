@@ -1,0 +1,10 @@
+{
+    "LOG (w/ Table view) [FML]": {
+        "prefix": ["<LOG"],
+        "body": [
+            "<LOG id=\"LOG\" autoexecute=\"true\" />\r\n<BOX width=\"100%\" height=\"100%\">\r\n\t<TABLE id=\"logtable\" data=\"LOG\" paged=\"true\" pagesize=\"100\">\r\n\t\t<TH> <!-- Table Header -->\r\n\t\t\t<TD sort=\"date\">\r\n\t\t\t\t<TEXT label=\"Date\" />\r\n\t\t\t</TD>\r\n\t\t\t<TD sort=\"type\">\r\n\t\t\t\t<TEXT label=\"Type\" />\r\n\t\t\t</TD>\r\n\t\t\t<TD sort=\"message\">\r\n\t\t\t\t<TEXT label=\"Message\" />\r\n\t\t\t</TD>\r\n\t\t\t<TD sort=\"caller\">\r\n\t\t\t\t<TEXT label=\"Caller\" />\r\n\t\t\t</TD>\r\n\t\t</TH>\r\n\t\t<TR id=\"datarow\"> <!-- Table Row -->\r\n\t\t\t<TD>\r\n\t\t\t\t<TEXT label=\"{data.date}\"/>\r\n\t\t\t</TD>\r\n\t\t\t<TD>\r\n\t\t\t\t<TEXT label=\"{data.type}\"/>\r\n\t\t\t</TD>\r\n\t\t\t<TD>\r\n\t\t\t\t<TEXT label=\"{data.message}\"/>\r\n\t\t\t</TD>\r\n\t\t\t<TD>\r\n\t\t\t\t<TEXT label=\"{data.caller}\"/>\r\n\t\t\t</TD>\r\n\t\t</TR>\r\n\t</TABLE>\r\n</BOX>"
+        ],
+        "description": "A LOG Datasource snippet with a Table view"
+    }
+}
+  
