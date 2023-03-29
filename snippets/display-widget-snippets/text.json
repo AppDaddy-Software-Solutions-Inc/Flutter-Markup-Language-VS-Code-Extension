@@ -1,12 +1,37 @@
 {
   "TEXT [FML]": {
     "prefix": ["<TEXT"],
-    "body": ["<TEXT label=\"${1}\" />"],
+    "body": ["<TEXT label=\"${1}\" size=\"14\" />"],
     "description": "A Text snippet"
+  },
+  "TEXT H1 [FML]": {
+    "prefix": ["<H1"],
+    "body": ["<TEXT label=\"${1}\" style=\"h1\" />"],
+    "description": "A h1 Text snippet"
+  },
+  "TEXT H2 [FML]": {
+    "prefix": ["<H2"],
+    "body": ["<TEXT label=\"${1}\" style=\"h2\" />"],
+    "description": "A h2 Text snippet"
+  },
+  "TEXT H3 [FML]": {
+    "prefix": ["<H3"],
+    "body": ["<TEXT label=\"${1}\" style=\"h3\" />"],
+    "description": "A h3 Text snippet"
+  },
+  "TEXT H4 [FML]": {
+    "prefix": ["<H4"],
+    "body": ["<TEXT label=\"${1}\" style=\"h4\" />"],
+    "description": "A h4 Text snippet"
+  },
+  "TEXT H5 [FML]": {
+    "prefix": ["<H5"],
+    "body": ["<TEXT label=\"${1}\" style=\"h5\" />"],
+    "description": "A h5 Text snippet"
   },
   "TEXT (unencoded) [FML]": {
     "prefix": ["<TEXT"],
-    "body": ["<TEXT>\n    <![CDATA[${1:unencodedtexthere}]]>\n</TEXT>"],
+    "body": ["<TEXT size=\"\">\n    <![CDATA[${1:unencodedtexthere}]]>\n</TEXT>"],
     "description": "An unencoded Text snippet using CDATA"
   },
   "TEXT SPAN [FML]": {

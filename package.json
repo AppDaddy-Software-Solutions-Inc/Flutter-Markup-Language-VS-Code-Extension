@@ -65,6 +65,10 @@
       },
       {
         "language": "fml",
+        "path": "./snippets/datasource-snippets/log.json"
+      },
+      {
+        "language": "fml",
         "path": "./snippets/display-widget-snippets/text.json"
       },
       {
