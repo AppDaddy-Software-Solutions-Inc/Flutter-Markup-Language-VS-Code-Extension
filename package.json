@@ -49,6 +49,10 @@
       },
       {
         "language": "fml",
+        "path": "./snippets/datasource-snippets/delete.json"
+      },
+      {
+        "language": "fml",
         "path": "./snippets/datasource-snippets/get.json"
       },
       {
