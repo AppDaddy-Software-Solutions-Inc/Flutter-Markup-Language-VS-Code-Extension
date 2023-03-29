@@ -1,0 +1,16 @@
+{
+    "LIST (dynamic) [FML]": {
+      "prefix": ["<LIST"],
+      "body": [
+        "<LIST collapsed=\"${1:false}\" data=\"${2}\">\r\n    <ITEM>\r\n        ${0}\r\n    </ITEM>\r\n</LIST>"
+      ],
+      "description": "A dynamic List snippet from a datasource"
+    },
+    "LIST (static) [FML]": {
+        "prefix": ["<LIST"],
+        "body": [
+            "<LIST collapsed=\"${1:true}\">\r\n    <ITEM>\r\n        ${2}\r\n    </ITEM>\r\n    <ITEM>\r\n        ${3}\r\n    </ITEM>\r\n    <ITEM>\r\n        ${4}\r\n    </ITEM>\r\n    <ITEM>\r\n        ${5}\r\n    </ITEM>\r\n</LIST>"
+        ],
+        "description": "A static List snippet with 4 items"
+    }
+  }

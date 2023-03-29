@@ -25,11 +25,15 @@
     "snippets": [
       {
         "language": "fml",
-        "path": "./snippets/data-interface-widget-snippets/table.json"
+        "path": "./snippets/data-interface-widget-snippets/chart.json"
       },
       {
         "language": "fml",
-        "path": "./snippets/data-interface-widget-snippets/chart.json"
+        "path": "./snippets/data-interface-widget-snippets/list.json"
+      },
+      {
+        "language": "fml",
+        "path": "./snippets/data-interface-widget-snippets/table.json"
       },
       {
         "language": "fml",
