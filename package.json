@@ -33,6 +33,10 @@
       },
       {
         "language": "fml",
+        "path": "./snippets/data-interface-widget-snippets/menu.json"
+      },
+      {
+        "language": "fml",
         "path": "./snippets/data-interface-widget-snippets/table.json"
       },
       {
