@@ -41,6 +41,10 @@
       },
       {
         "language": "fml",
+        "path": "./snippets/datasource-snippets/camera.json"
+      },
+      {
+        "language": "fml",
         "path": "./snippets/datasource-snippets/get.json"
       },
       {
