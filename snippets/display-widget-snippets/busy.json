@@ -1,0 +1,13 @@
+{
+    "BUSY [FML]": {
+      "prefix": ["<BUSY"],
+      "body": ["<BUSY visible=\"true\">\r\n    <CENTER>\r\n        <TEXT value=\"Loading...\" />\r\n    </CENTER>\r\n</BUSY>"],
+      "description": "A Busy loading snippet"
+    },
+    "BUSY (visibility based on datasource) [FML]": {
+        "prefix": ["<BUSY"],
+        "body": ["<GET id=\"source\" url=\"\" autoexecute=\"true\"/>\r\n<BUSY visible=\"={source.status} == 'busy'\" />"],
+        "description": "A Busy indicator snippet"
+      }
+  }
+  
