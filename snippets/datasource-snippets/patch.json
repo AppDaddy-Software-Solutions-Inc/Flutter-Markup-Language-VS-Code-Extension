@@ -2,14 +2,14 @@
     "PATCH (xml) [FML]": {
       "prefix": ["<PATCH"],
       "body": [
-        "<PATCH id=\"${1}\" url=\"${2}\">\r\n    <BODY>\r\n    <![CDATA[\r\n       ${0:YOUR_XML_BODY_HERE}\r\n    ]]>\r\n    </BODY>\r\n</PATCH>"
+        "<PATCH id=\"${1}\" url=\"${2}\"\r\n    onsuccess=\"\"\r\n    onfail=\"\">\r\n    <BODY>\r\n    <![CDATA[\r\n       ${0:YOUR_XML_BODY_HERE}\r\n    ]]>\r\n    </BODY>\r\n</PATCH>"
       ],
       "description": "A xml HTTP Patch Datasource snippet"
     },
     "PATCH (json) [FML]": {
       "prefix": ["<PATCH"],
       "body": [
-        "<PATCH id=\"${1}\" url=\"${2}\">\r\n    <HEADERS>\r\n      <HEADER key=\"content-type\" value=\"application/json\"/>\r\n    </HEADERS>\r\n    <BODY>\r\n    <![CDATA[\r\n       ${0:YOUR_JSON_BODY_HERE}\r\n    ]]>\r\n    </BODY>\r\n</PATCH>"
+        "<PATCH id=\"${1}\" url=\"${2}\"\r\n    onsuccess=\"\"\r\n    onfail=\"\">\r\n    <HEADERS>\r\n      <HEADER key=\"content-type\" value=\"application/json\"/>\r\n    </HEADERS>\r\n    <BODY>\r\n    <![CDATA[\r\n       ${0:YOUR_JSON_BODY_HERE}\r\n    ]]>\r\n    </BODY>\r\n</PATCH>"
       ],
       "description": "A json HTTP Patch Datasource snippet"
     }
