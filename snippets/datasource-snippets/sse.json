@@ -1,0 +1,17 @@
+{
+    "SSE (xml) [FML]": {
+      "prefix": ["<SSE"],
+      "body": [
+        "<SSE id=\"${1}\" url=\"${2}\" autoexecute=\"true\" events=\"message,delete,get,patch,post,put\"/>"
+      ],
+      "description": "A xml Server-Sent Event Datasource snippet"
+    },
+    "SSE (json) [FML]": {
+        "prefix": ["<SSE"],
+        "body": [
+            "<SSE id=\"${1}\" autoexecute=\"true\" url=\"${2}\" events=\"message,delete,get,patch,post,put\">\n    <HEADERS>\n      <HEADER key=\"content-type\" value=\"application/json\"/>\n    </HEADERS>\n</SSE>"
+        ],
+        "description": "A json Server-Sent Event Datasource snippet"
+      }
+  }
+  
