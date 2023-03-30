@@ -5,5 +5,12 @@
             "<NFC id=\"tag\" \r\nonsuccess=\"toast('Recieved: {tag.received}, Serial: {tag.serial}, Payload: {tag.payload}');\"\r\nonfail=\"\" />"
         ],
         "description": "A NFC Read snippet"
+    },
+    "NFC (write) [FML]": {
+        "prefix": ["<NFC"],
+        "body": [
+            "<NFC id=\"nfc\" autoexecute=\"true\" method=\"write\" \r\n    onsuccess=\"nfc2.stop();toast('Wrote: {write} to tag')\" \r\n    onfail=\"toast('Failed to write to tag');\">\r\n\t<BODY>\r\n\t\tSTRING_TO_WRITE\r\n\t</BODY>\r\n</NFC>"
+        ],
+        "description": "A NFC Write snippet"
     }
 }
