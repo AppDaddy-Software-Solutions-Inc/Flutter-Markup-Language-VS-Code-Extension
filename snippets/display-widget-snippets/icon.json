@@ -4,14 +4,14 @@
       "body": [
         "<ICON icon=\"${1|account_circle,add,apps,arrow_back_ios,arrow_forward_ios,autorenew,bookmark_border,bookmark,calendar_month,camera_alt,cancel,check,clear,clear_all,cloud_download,cloud_upload,color_lens,comment,contacts,copy,dark_mode,dashboard,data_usage,delete,diamond,eco,edit,error_outline,expand_circle_down,feedback,file_download,file_download_done,file_upload,filter_alt,folder,groups,help_outline,history,image,info_outline,keyboard_arrow_down,keyboard_arrow_left,keyboard_arrow_right,keyboard_arrow_up,keyboard_voice,leaderboard,lightbulb,location_on,mail,menu,miscellaneous_services,more_horiz,more_horiz,notes,notifications,open_in_new,person,photo,priority_high,qr_code_scanner,redo,refresh,replay,search,send,settings,shield,star_rate,table_chart,thumb_down,thumb_up,trending_down,trending_up,undo,verified,warning_amber|}\" color=\"\" size=\"32\"/>"
       ],
-      "description": "An Icon loading snippet with some common icons to choose from"
+      "description": "An Icon snippet with some common icons to choose from"
     },
     "ICON (w/ rotation) [FML]": {
         "prefix": ["<ICON"],
         "body": [
             "<ICON icon=\"${1:double_arrow}\" color=\"\" rotation=\"${2:360}\"/>"
         ],
-        "description": "An Icon loading snippet with rotation degrees"
+        "description": "An Icon snippet with rotation degrees"
       }
   }
   

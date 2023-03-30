@@ -1,0 +1,17 @@
+{
+    "IMAGE [FML]": {
+        "prefix": ["<IMAGE"],
+        "body": [
+            "<IMAGE url=\"${1}\" width=\"\" height=\"\" />"
+        ],
+        "description": "An Image snippet default attributes applied"
+    },
+    "IMAGE (all attributes) [FML]": {
+      "prefix": ["<IMAGE"],
+      "body": [
+        "<IMAGE url=\"${1}\" width=\"${2}\" height=\"${3}\" fit=\"${4|cover,fill,contain,scale,width,height|}\" opacity=\"1.0\" rotation=\"0\" interactive=\"false\" />"
+      ],
+      "description": "An Image snippet with high customization"
+    }
+  }
+  
