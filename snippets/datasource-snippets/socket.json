@@ -1,0 +1,10 @@
+{
+    "SOCKET (default) [FML]": {
+      "prefix": ["<SOCKET"],
+      "body": [
+        "<SOCKET id=\"${2}\" url=\"wss://${1}\" autoexecute=\"true\"\r\n    onmessage=\"\"\r\n    onsuccess=\"\"\r\n    onfail=\"\"\r\n    ondisconnected=\"\" />"
+      ],
+      "description": "A Socket Datasource snippet"
+    }
+  }
+  
