@@ -125,6 +125,10 @@
       },
       {
         "language": "fml",
+        "path": "./snippets/layout-widget-snippets/center.json"
+      },
+      {
+        "language": "fml",
         "path": "./snippets/utility-widget-snippets/variable.json"
       }
     ]
