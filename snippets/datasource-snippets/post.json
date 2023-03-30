@@ -1,0 +1,17 @@
+{
+    "POST (xml) [FML]": {
+      "prefix": ["<POST"],
+      "body": [
+        "<POST id=\"${1}\" url=\"${2}\">\r\n    <BODY>\r\n    <![CDATA[\r\n       ${0:YOUR_XML_BODY_HERE}\r\n    ]]>\r\n    </BODY>\r\n</POST>"
+      ],
+      "description": "A xml HTTP Post Datasource snippet"
+    },
+    "POST (json) [FML]": {
+      "prefix": ["<POST"],
+      "body": [
+        "<POST id=\"${1}\" url=\"${2}\">\r\n    <HEADERS>\r\n      <HEADER key=\"content-type\" value=\"application/json\"/>\r\n    </HEADERS>\r\n    <BODY>\r\n    <![CDATA[\r\n       ${0:YOUR_JSON_BODY_HERE}\r\n    ]]>\r\n    </BODY>\r\n</POST>"
+      ],
+      "description": "A json HTTP Post Datasource snippet"
+    }
+  }
+  

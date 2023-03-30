@@ -73,6 +73,14 @@
       },
       {
         "language": "fml",
+        "path": "./snippets/datasource-snippets/patch.json"
+      },
+      {
+        "language": "fml",
+        "path": "./snippets/datasource-snippets/post.json"
+      },
+      {
+        "language": "fml",
         "path": "./snippets/display-widget-snippets/text.json"
       },
       {
