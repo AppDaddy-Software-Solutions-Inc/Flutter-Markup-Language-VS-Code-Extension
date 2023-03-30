@@ -85,6 +85,10 @@
       },
       {
         "language": "fml",
+        "path": "./snippets/datasource-snippets/socket.json"
+      },
+      {
+        "language": "fml",
         "path": "./snippets/display-widget-snippets/text.json"
       },
       {
