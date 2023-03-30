@@ -1,0 +1,8 @@
+{
+    "HTML [FML]": {
+      "prefix": ["<HTML"],
+      "body": ["<HTML>\r\n    <![CDATA[\r\n        <p>replace_this_element_with_html</p>\r\n    ]]>\r\n</HMTL>"],
+      "description": "A Html loading snippet"
+    }
+  }
+  
