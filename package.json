@@ -101,6 +101,10 @@
       },
       {
         "language": "fml",
+        "path": "./snippets/display-widget-snippets/icon.json"
+      },
+      {
+        "language": "fml",
         "path": "./snippets/display-widget-snippets/text.json"
       },
       {
