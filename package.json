@@ -105,6 +105,10 @@
       },
       {
         "language": "fml",
+        "path": "./snippets/display-widget-snippets/image.json"
+      },
+      {
+        "language": "fml",
         "path": "./snippets/display-widget-snippets/text.json"
       },
       {
