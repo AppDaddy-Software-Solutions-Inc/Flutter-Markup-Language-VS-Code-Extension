@@ -8,6 +8,6 @@
         "prefix": ["<CHECKBOX"],
         "body": ["<CHECKBOX id=\"${1}\" data=\"${2}\">\r\n    <OPTION value=\"{data.${3}}\" label=\"{data.${4}}\"/>\r\n</CHECKBOX>"],
         "description": "A Checkbox snippet populated by a datasource"
-      }
+    }
 }
   
