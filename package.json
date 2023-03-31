@@ -153,6 +153,10 @@
       },
       {
         "language": "fml",
+        "path": "./snippets/interactive-widget-snippets/select.json"
+      },
+      {
+        "language": "fml",
         "path": "./snippets/layout-widget-snippets/box.json"
       },
       {
