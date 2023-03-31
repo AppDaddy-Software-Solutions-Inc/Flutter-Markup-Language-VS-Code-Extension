@@ -1,0 +1,17 @@
+{
+    "SELECT (static) [FML]": {
+      "prefix": ["<SELECT"],
+      "body": [
+            "<SELECT id=\"${1}\">\r\n    <OPTION value=\"true\" label=\"Yes\"/>\r\n    <OPTION value=\"false\" label=\"No\"/>\r\n</SELECT>"
+        ],
+      "description": "A static Select snippet"
+    },
+    "SELECT (dynamic) [FML]": {
+        "prefix": ["<SELECT"],
+        "body": [
+            "<SELECT id=\"${1}\" data=\"${2}\" addempty=\"${3|true,false|\">\r\n    <OPTION value=\"data.${4}\" label=\"data.${5}\"/>\r\n</SELECT>"
+        ],
+        "description": "A Select snippet with its options populated by a datasource"
+    }
+}
+  
