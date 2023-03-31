@@ -129,6 +129,10 @@
       },
       {
         "language": "fml",
+        "path": "./snippets/layout-widget-snippets/datepicker.json"
+      },
+      {
+        "language": "fml",
         "path": "./snippets/layout-widget-snippets/center.json"
       },
       {

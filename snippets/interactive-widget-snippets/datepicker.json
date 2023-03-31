@@ -1,0 +1,8 @@
+{
+    "DATEPICKER (datetime/date/time) [FML]": {
+      "prefix": ["<DATEPICKER"],
+      "body": ["<DATEPICKER id=\"${2}\" type=\"${1|datetime,date,time|}\" />"],
+      "description": "A Date Picker snippet"
+    }
+}
+  
