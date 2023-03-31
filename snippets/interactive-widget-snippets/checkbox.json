@@ -1,0 +1,13 @@
+{
+    "CHECKBOX (static) [FML]": {
+      "prefix": ["<CHECKBOX"],
+      "body": ["<CHECKBOX id=\"${1}\">\r\n    <OPTION value=\"a\" label=\"A\"/>\r\n    <OPTION value=\"b\" label=\"B\"/>\r\n    <OPTION value=\"c\" label=\"C\"/>\r\n    <OPTION value=\"d\" label=\"D\"/>\r\n</CHECKBOX>"],
+      "description": "A static Checkbox snippet"
+    },
+    "CHECKBOX (dynamic) [FML]": {
+        "prefix": ["<CHECKBOX"],
+        "body": ["<CHECKBOX id=\"${1}\" data=\"${2}\">\r\n    <OPTION value=\"{data.${3}}\" label=\"{data.${4}}\"/>\r\n</CHECKBOX>"],
+        "description": "A Checkbox snippet populated by a datasource"
+      }
+}
+  

@@ -18,5 +18,10 @@
     "prefix": ["<BUTTON", "BTN"],
     "body": ["<BUTTON type=\"outlined\" onclick=\"${2}\">\r\n    <TEXT label=\"${1:Go}\" />\r\n    <ICON icon=\"keyboard_arrow_right\" />\r\n</BUTTON>"],
     "description": "An Icon Button snippet"
+  },
+  "BUTTON (toggle) [FML]": {
+    "prefix": ["<BUTTON", "BTN"],
+    "body": ["<VAR id=\"b1\" value=\"false\" />\r\n<BUTTON label=\"Toggle\" type=\"={b1} ? 'elevated' : 'outlined'\" onclick=\"b1.set(!{b1});\" />"],
+    "description": "A custom Toggle Button snippet"
   }
 }

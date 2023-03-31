@@ -125,6 +125,10 @@
       },
       {
         "language": "fml",
+        "path": "./snippets/layout-widget-snippets/checkbox.json"
+      },
+      {
+        "language": "fml",
         "path": "./snippets/layout-widget-snippets/center.json"
       },
       {
