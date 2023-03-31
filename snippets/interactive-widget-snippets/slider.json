@@ -1,0 +1,24 @@
+{
+    "SLIDER (default) [FML]": {
+      "prefix": ["<SLIDER"],
+      "body": [
+            "<SLIDER id=\"${1}\" minimum=\"${2:0}\" maximum=\"${3:100}\" value=\"${4:50}\" width=\"300\" />"
+        ],
+      "description": "A Slider snippet"
+    },
+    "SLIDER (divided) [FML]": {
+        "prefix": ["<SLIDER"],
+        "body": [
+            "<SLIDER id=\"${1}\" minimum=\"${2:1}\" maximum=\"${3:10}\" divisions=\"${4:9}\" width=\"300\" />"
+        ],
+        "description": "A Slider snippet with dividers"
+    },
+    "SLIDER (range) [FML]": {
+        "prefix": ["<SLIDER"],
+        "body": [
+            "<SLIDER id=\"${1}\" minimum=\"${2:-10}\" maximum=\"${3:10}\" value=\"${4:-5,5}\" divisions=\"${5:18}\" range=\"true\" width=\"300\"/>"
+        ],
+        "description": "A range Slider snippet with dividers"
+    }
+}
+  
