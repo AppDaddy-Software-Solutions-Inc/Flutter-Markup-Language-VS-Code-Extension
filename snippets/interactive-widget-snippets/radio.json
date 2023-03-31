@@ -1,0 +1,15 @@
+{
+    "RADIO (static) [FML]": {
+      "prefix": ["<RADIO"],
+      "body": [
+        "<RADIO id=\"${1}\" value=\"#1C1C1C\">\r\n\t<OPTION value=\"#FF0000\" label=\"Red\"/>\r\n\t<OPTION value=\"#0000FF\" label=\"Blue\"/>\r\n\t<OPTION value=\"#00FF00\" label=\"Green\"/>\r\n\t<OPTION value=\"#1C1C1C\" label=\"Yellow\"/>\r\n</RADIO>"
+        ],
+      "description": "A static RADIO snippet"
+    },
+    "RADIO (dynamic) [FML]": {
+        "prefix": ["<RADIO"],
+        "body": ["<RADIO id=\"${1}\" data=\"${2}\">\r\n    <OPTION value=\"{data.${3}}\" label=\"{data.${4}}\"/>\r\n</RADIO>"],
+        "description": "A RADIO snippet populated by a datasource"
+    }
+}
+  
