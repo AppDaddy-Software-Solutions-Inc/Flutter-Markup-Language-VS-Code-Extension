@@ -1,0 +1,9 @@
+{
+    "POPOVER [FML]": {
+        "prefix": ["<POPOVER"],
+        "body": [
+            "<POPOVER icon=\"save\" label=\"Save\">\r\n    <ITEM label=\"Save to Cache\" onclick=\"${1}\" />\r\n    <ITEM label=\"Save to Cloud\" onclick=\"${2}\" />\r\n    <ITEM label=\"Save to Disk\" onclick=\"${3}\" />\r\n</POPOVER>"
+          ],
+        "description": "A Popover snippet example with 3 options"
+    }
+}
