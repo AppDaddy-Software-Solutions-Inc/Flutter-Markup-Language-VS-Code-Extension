@@ -129,11 +129,15 @@
       },
       {
         "language": "fml",
+        "path": "./snippets/interactive-widget-snippets/gesture.json"
+      },
+      {
+        "language": "fml",
         "path": "./snippets/interactive-widget-snippets/input.json"
       },
       {
         "language": "fml",
-        "path": "./snippets/interactive-widget-snippets/gesture.json"
+        "path": "./snippets/interactive-widget-snippets/link.json"
       },
       {
         "language": "fml",
