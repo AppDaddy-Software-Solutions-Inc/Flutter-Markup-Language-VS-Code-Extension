@@ -1,0 +1,7 @@
+{
+    "SWITCH [FML]": {
+      "prefix": ["<SWITCH"],
+      "body": ["<SWITCH id=\"${2}\" value=\"${1|true,false|}\" />"],
+      "description": "A Switch snippet"
+    }
+}
