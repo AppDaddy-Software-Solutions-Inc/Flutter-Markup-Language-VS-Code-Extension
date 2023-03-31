@@ -1,0 +1,52 @@
+{
+    "INPUT (simple + clearable) [FML]": {
+        "prefix": ["<INPUT"],
+        "body": [
+            "<INPUT id=\"${1}\" border=\"bottom\" clear=\"true\" />"
+        ],
+        "description": "An Input snippet with a bottom border and a clear button"
+    },
+    "INPUT (character + length restricted) [FML]": {
+        "prefix": ["<INPUT"],
+        "body": [
+            "<INPUT id=\"${1}\" length=\"2\" allow=\"A-Za-z\" width=\"50\" radius=\"0\" />"
+        ],
+        "description": "An Input snippet allowing only a maximum of 2 letters"
+    },
+    "INPUT (phone local) [FML]": {
+      "prefix": ["<INPUT"],
+      "body": [
+        "<INPUT id=\"${1}\" mask=\"(###) ###-####\" allow=\"0-9\" value=\"\" hint=\"Phone Number\" keyboardtype=\"number\" />"
+      ],
+      "description": "A simple phone number Input snippet"
+    },
+    "INPUT (phone with validation) [FML]": {
+      "prefix": ["<INPUT"],
+      "body": [
+        "<INPUT id=\"${1}\" mask=\"(###) ###-####\" allow=\"0-9\" value=\"\" hint=\"Phone Number\" keyboardtype=\"number\" />"
+      ],
+      "description": "A validated phone number Input snippet"
+    },
+    "INPUT (password) [FML]": {
+        "prefix": ["<INPUT"],
+        "body": [
+            "<INPUT id=\"${1}\" type=\"password\" value=\"\" hint=\"Password\"/>"
+        ],
+        "description": "A password Input snippet"
+    },
+    "INPUT (compact email w/ icon) [FML]": {
+        "prefix": ["<INPUT"],
+        "body": [
+            "<INPUT id=\"${1}\" type=\"email\" keyboardtype=\"emailaddress\" border=\"bottom\" dense=\"true\" size=\"14\" width=\"250\" icon=\"alternate_email\" />"
+        ],
+        "description": "A condensed email Input snippet with and icon"
+    },
+    "INPUT (custom types) [FML]": {
+        "prefix": ["<INPUT"],
+        "body": [
+            "<INPUT id=\"${1}\" type=\"${2|null,email,phone,currency,cvc,credit,bool,numeric,int,expire|}\" keyboardtype=\"${3|text,url,name,number,numeric,datetime,emailaddress,phone,streetaddress,multiline|}\" keyboardinput=\"${|next,done,go,search,send|}\" />"
+        ],
+        "description": "A customizable Input snippet with various types"
+    }
+}
+  
