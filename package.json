@@ -121,15 +121,19 @@
       },
       {
         "language": "fml",
+        "path": "./snippets/interactive-widget-snippets/checkbox.json"
+      },
+      {
+        "language": "fml",
+        "path": "./snippets/interactive-widget-snippets/datepicker.json"
+      },
+      {
+        "language": "fml",
+        "path": "./snippets/interactive-widget-snippets/gesture.json"
+      },
+      {
+        "language": "fml",
         "path": "./snippets/layout-widget-snippets/box.json"
-      },
-      {
-        "language": "fml",
-        "path": "./snippets/layout-widget-snippets/checkbox.json"
-      },
-      {
-        "language": "fml",
-        "path": "./snippets/layout-widget-snippets/datepicker.json"
       },
       {
         "language": "fml",

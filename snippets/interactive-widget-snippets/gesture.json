@@ -1,0 +1,8 @@
+{
+    "GESTURE [FML]": {
+      "prefix": ["<GESTURE"],
+      "body": ["<GESTURE \r\n    onswipeleft=\"\" \r\n    onswiperight=\"\" \r\n    onswipeup=\"\" \r\n    onswipedown=\"\" \r\n    onclick=\"\"\r\n    onrightclick=\"\"\r\n    onlongpress=\"\"\r\n    ondoubletap=\"\"\r\n    >\r\n    <BOX height=\"300\" width=\"300\" center=\"true\" color=\"amber\">\r\n        <ICON icon=\"swipe\" size=\"190\" />\r\n    </BOX>\r\n</GESTURE>"],
+      "description": "A Gesture snippet, remove any gestures that are not required"
+    }
+}
+  
