@@ -1,0 +1,14 @@
+{
+    "SCRIBBLE (default) [FML]": {
+      "prefix": ["<SCRIBBLE"],
+      "body": ["<SCRIBBLE id=\"${1}\" width=\"${2}\" height=\"${3}\" />"],
+      "description": "A Scribble snippet"
+    },
+    "SCRIBBLE (signature) [FML]": {
+        "prefix": ["<SCRIBBLE"],
+        "body": [
+            "<POST id=\"upload\" url=\"${1:https://a.website/api/agreement/signature}\" onsuccess=\"${2}\" onfail=\"toast('{upload.statuscode} error from API')\">\r\n    <BODY>\r\n        <agreement>\r\n            <signature><![CDATA[data:image/png;base64,{signature}]]></signature>\r\n        </agreement>\r\n    </BODY>\r\n</POST>\r\n<BOX center=\"true\" expand=\"false\">\r\n\t<SCRIBBLE id=\"signature\" width=\"350\" height=\"300\" />\r\n\t<PAD top=\"20\" />\r\n\t<BUTTON type=\"elevated\" width=\"350\" label=\"Agree\" enabled=\"=!noe({signature})\" onclick=\"upload.start()\" />\r\n</BOX>"
+        ],
+        "description": "A Scribble containing a signature box and a POST call to upload the image snippet"
+      }
+}
