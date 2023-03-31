@@ -1,0 +1,16 @@
+{
+    "LINK (default event) [FML]": {
+        "prefix": ["<LINK"],
+        "body": [
+            "<LINK onclick=\"open('https://fml.dev')\">\r\n\t<TXT value=\"_Click here_\" />\r\n</LINK>"
+          ],
+        "description": "A Link snippet that calls an open event to goto a web page"
+    },
+    "LINK (email) [FML]": {
+      "prefix": ["<LINK"],
+      "body": [
+            "<LINK url=\"mailto:${1:info@fml.dev}\">\r\n    <BOX center=\"true\">\r\n        <ICON icon=\"email_outlined\" size=\"32\" />\r\n        <TXT value=\"${1:info@fml.dev}\" />\r\n    </BOX>\r\n</LINK>"
+        ],
+      "description": "An email Link snippet"
+    }
+}
