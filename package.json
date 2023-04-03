@@ -109,10 +109,6 @@
       },
       {
         "language": "fml",
-        "path": "./snippets/display-widget-snippets/modal.json"
-      },
-      {
-        "language": "fml",
         "path": "./snippets/display-widget-snippets/text.json"
       },
       {
@@ -178,6 +174,10 @@
       {
         "language": "fml",
         "path": "./snippets/layout-widget-snippets/column.json"
+      },
+      {
+        "language": "fml",
+        "path": "./snippets/layout-widget-snippets/modal.json"
       },
       {
         "language": "fml",
