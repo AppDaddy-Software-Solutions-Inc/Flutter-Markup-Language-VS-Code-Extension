@@ -1,0 +1,7 @@
+{
+    "SCROLLER [FML]": {
+      "prefix": ["<SCROLLER"],
+      "body": ["<SCROLL scrollbar=\"${1|null,true,false|}\" layout=\"${2|col,row|}\" halign=\"${3|start,end,center|}\" valign=\"${4|start,end,center|}\">\n    ${0}\n</SCROLL>"],
+      "description": "A Scroller snippet"
+    }
+}
