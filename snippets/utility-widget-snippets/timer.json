@@ -1,0 +1,7 @@
+{
+    "TIMER [FML]": {
+      "prefix": ["<TIMER"],
+      "body": ["<TIMER id=\"${1}\" action=\"${2}\" frequency=\"${3}\"/>"],
+      "description": "A Timer snippet"
+    }
+}
