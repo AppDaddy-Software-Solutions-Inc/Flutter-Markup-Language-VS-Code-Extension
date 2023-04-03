@@ -1,0 +1,22 @@
+{
+    "PADDING (all) [FML]": {
+      "prefix": ["<PAD"],
+      "body": ["<PAD all=\"${1}\">\r\n    ${0}\r\n</PAD>"],
+      "description": "A Padding snippet with symmetrical padding on all sides"
+    },
+    "PADDING (horizontal) [FML]": {
+      "prefix": ["<PAD"],
+      "body": ["<PAD horizontal=\"${1}\">\r\n    ${0}\r\n</PAD>"],
+      "description": "A Padding snippet with symmetrical horizontal padding"
+    },
+    "PADDING (vertical) [FML]": {
+      "prefix": ["<PAD"],
+      "body": ["<PAD vertical=\"${1}\">\r\n    ${0}\r\n</PAD>"],
+      "description": "A Padding snippet with symmetrical vertical padding"
+    },
+    "PADDING (individual) [FML]": {
+      "prefix": ["<PAD"],
+      "body": ["<PAD top=\"${1}\" bottom=\"${2}\" left=\"${3}\" right=\"${4}\">\r\n    ${0}\r\n</PAD>"],
+      "description": "A Padding snippet with individually padded sides"
+    }
+}
