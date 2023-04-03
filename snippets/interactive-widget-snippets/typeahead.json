@@ -1,0 +1,10 @@
+{
+    "TYPEAHEAD (dynamic w/ tags) [FML]": {
+        "prefix": ["<TYPEAHEAD"],
+        "body": [
+            "<TYPEAHEAD id=\"${1}\" data=\"${2}\">\r\n\t<OPTION value=\"{data.${3}}\" label=\"{data.${4}}\" tags=\"{data.${3}}, {data.${4}}\" />\r\n</TYPEAHEAD>"
+        ],
+        "description": "A Typeahead snippet with its options populated from a datasource including tags"
+    }
+}
+  
