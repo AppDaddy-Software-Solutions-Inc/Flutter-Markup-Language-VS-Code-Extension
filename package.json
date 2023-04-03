@@ -237,6 +237,10 @@
       },
       {
         "language": "fml",
+        "path": "./snippets/utility-widget-snippets/template.json"
+      },
+      {
+        "language": "fml",
         "path": "./snippets/utility-widget-snippets/variable.json"
       }
     ]
