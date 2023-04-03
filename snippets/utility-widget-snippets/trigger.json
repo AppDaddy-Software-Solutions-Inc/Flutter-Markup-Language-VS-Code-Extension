@@ -1,0 +1,9 @@
+{
+    "TRIGGER (w/ button) [FML]": {
+      "prefix": ["<TRIGGER", "<CASE"],
+      "body": [
+        "<TRIGGER id=\"${1}\" type=\"${2|single,multi|}\">\r\n    <CASE when=\"=false\" call=\"toast('Case 1')\" />\r\n    <CASE when=\"=true\" call=\"toast('Case 2')\" />\r\n    <CASE when=\"=true\" call=\"toast('Case 3')\" />\r\n</TRIGGER>\r\n<BTN onclick=\"trigger('${1}')\" label=\"trigger\" />"
+      ],
+      "description": "A Trigger snippet with a button to trigger the case call(s)"
+    }
+}
