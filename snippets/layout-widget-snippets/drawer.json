@@ -1,0 +1,14 @@
+{
+    "DRAWER (w/ drag to open) [FML]": {
+      "prefix": ["<DRAWER"],
+      "body": ["<!-- Ensure Drawers are a direct child of the template and not nested within widgets -->\r\n<DRAWER id=\"${1}\" side=\"${2|top,bottom,left,right|}\" handle=\"true\">\r\n    ${3}\r\n</DRAWER>"],
+      "description": "A Drawer snippet with drag handle"
+    },
+    "DRAWER (w/ button to open) [FML]": {
+      "prefix": ["<DRAWER"],
+      "body": [
+        "<BTN onclick=\"open('${1}')\" label=\"Open Drawer\" />\r\n<!-- Ensure Drawers are a direct child of the template and not nested within widgets -->\r\n<DRAWER id=\"${1}\" side=\"${2|top,bottom,left,right|}\" handle=\"false\">\r\n    ${3}\r\n    <BTN onclick=\"close('${1}')\" label=\"Close Drawer\" />\r\n</DRAWER>"
+    ],
+      "description": "A Drawer snippet with included buttons to open and close"
+    }
+}
