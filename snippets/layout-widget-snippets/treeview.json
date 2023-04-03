@@ -1,0 +1,9 @@
+{
+    "TREEVIEW (within Splitview & utilizing Tabview) [FML]": {
+        "prefix": ["<TREEVIEW"],
+        "body": [
+            "<SPLITVIEW width=\"200\">\r\n\t<!-- Tree View -->\r\n\t<VIEW>\r\n\t\t<TREEVIEW icon=\"keyboard_arrow_right\" expandedicon=\"keyboard_arrow_down\">\r\n\t\t\t<NODE label=\"BOX\" expanded=\"true\">\r\n\t\t\t\t<NODE label=\"Layout\" expanded=\"false\">\r\n\t\t\t\t\t<NODE label=\"Vertical\" onclick=\"open('')\" />\r\n\t\t\t\t\t<NODE label=\"Horizontal\" onclick=\"open('')\" />\r\n\t\t\t\t\t<NODE label=\"Stacked\" onclick=\"open('')\" />\r\n\t\t\t\t</NODE>\r\n\t\t\t\t<NODE label=\"Sizing\" onclick=\"open('')\" />\r\n\t\t\t</NODE>\r\n\t\t\t<NODE label=\"TEXT\" expanded=\"true\">\r\n\t\t\t\t<NODE label=\"Sizing\" onclick=\"open('')\" />\r\n\t\t\t\t<NODE label=\"Decoration\" onclick=\"open('')\" />\r\n\t\t\t</NODE>\r\n\t\t</TREEVIEW>\r\n\t</VIEW>\r\n\t<!-- Tab View -->\r\n\t<VIEW>\r\n\t\t<BOX>\r\n\t\t\t<TABVIEW tabbutton=\"true\" tabbar=\"true\" />\r\n\t\t</BOX>\r\n\t</VIEW>\r\n</SPLITVIEW>"
+        ],
+        "description": "A Treeview snippet within Splitview utilizing a Tabview"
+    }
+}
