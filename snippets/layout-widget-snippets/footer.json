@@ -1,0 +1,7 @@
+{
+    "FOOTER [FML]": {
+      "prefix": ["<FOOTER"],
+      "body": ["<!-- Ensure Footers are a direct child of the template and not nested within widgets -->\r\n<FOOTER height=\"${1}\">\r\n    <BOX expand=\"true\" layout=\"${2|col,row,stack|}\">\r\n        ${0}\r\n    </BOX>\r\n</FOOTER>"],
+      "description": "A Footer snippet"
+    }
+}

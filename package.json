@@ -185,6 +185,14 @@
       },
       {
         "language": "fml",
+        "path": "./snippets/layout-widget-snippets/footer.json"
+      },
+      {
+        "language": "fml",
+        "path": "./snippets/layout-widget-snippets/header.json"
+      },
+      {
+        "language": "fml",
         "path": "./snippets/layout-widget-snippets/modal.json"
       },
       {
