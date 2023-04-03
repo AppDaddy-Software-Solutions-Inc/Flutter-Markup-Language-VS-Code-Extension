@@ -1,7 +1,7 @@
 {
   "VAR [FML]": {
     "prefix": ["<VAR"],
-    "body": ["<VAR id=\"${1}\" value=\"${2}\" />"],
+    "body": ["<VAR id=\"${1}\" value=\"${2}\" onchange=\"${3}\" />"],
     "description": "A Variable snippet"
   }
 }
