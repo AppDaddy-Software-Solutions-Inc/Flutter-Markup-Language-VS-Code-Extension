@@ -1,0 +1,7 @@
+{
+    "HEADER [FML]": {
+      "prefix": ["<HEADER"],
+      "body": ["<!-- Ensure Headers are a direct child of the template and not nested within widgets -->\r\n<HEADER height=\"${1}\">\r\n    <BOX expand=\"true\" layout=\"${2|col,row,stack|}\">\r\n        ${0}\r\n    </BOX>\r\n</HEADER>"],
+      "description": "A Header snippet"
+    }
+}
