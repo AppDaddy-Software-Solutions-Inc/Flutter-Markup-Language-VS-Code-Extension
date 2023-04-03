@@ -177,6 +177,14 @@
       },
       {
         "language": "fml",
+        "path": "./snippets/layout-widget-snippets/drawer.json"
+      },
+      {
+        "language": "fml",
+        "path": "./snippets/layout-widget-snippets/expanded.json"
+      },
+      {
+        "language": "fml",
         "path": "./snippets/layout-widget-snippets/modal.json"
       },
       {
