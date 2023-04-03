@@ -1,0 +1,9 @@
+{
+    "POSITIONED [FML]": {
+      "prefix": ["<POSITIONED"],
+      "body": [
+        "<POS top=\"${1:null}\" bottom=\"${2:null}\" left=\"${3:null}\" right=\"${4:null}\" x=\"${5:null}\" y=\"${6:null}\">\n    ${0}\n</POS>\n"
+      ],
+      "description": "A Positioned snippet for use within a Stack"
+    }
+}
