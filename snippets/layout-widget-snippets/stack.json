@@ -1,0 +1,9 @@
+{
+    "STACK [FML]": {
+      "prefix": ["<STACK"],
+      "body": [
+        "<STACK width=\"${1}\" height=\"${2}\">\n    <CENTER>\n        ${3}\n    </CENTER>\n    <POS right=\"${4}\" top=\"{5}\">\n        ${0}\n    </POS>\n</STACK>\n"
+      ],
+      "description": "A Stack snippet with a centered widget and a positioned widget"
+    }
+}
