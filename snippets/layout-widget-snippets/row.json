@@ -1,0 +1,12 @@
+{
+    "ROW (centered) [FML]": {
+      "prefix": ["<ROW"],
+      "body": ["<ROW width=\"${1:100%}\" height=\"${2:100%}\" center=\"true\">\n    ${0}\n</ROW>"],
+      "description": "A sized Row snippet with its children centered on both axis"
+    },
+    "ROW (w/ alignments) [FML]": {
+        "prefix": ["<ROW"],
+        "body": ["<ROW halign=\"${2|start,end,center,between,around,evenly|}\" valign=\"${1|start,end,center|}\">\n    ${0}\n</ROW>"],
+        "description": "A horizontally expanding Row snippet with separately aligned children on each axis"
+    }
+}
