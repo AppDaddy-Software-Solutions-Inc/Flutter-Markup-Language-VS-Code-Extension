@@ -1,0 +1,12 @@
+{
+    "COLUMN (centered) [FML]": {
+      "prefix": ["<COLUMN"],
+      "body": ["<COLUMN width=\"${1:100%}\" height=\"${2:100%}\" center=\"true\">\n    ${0}\n</COLUMN>"],
+      "description": "A sized Column snippet with its children centered on both axis"
+    },
+    "COLUMN (w/ alignments) [FML]": {
+        "prefix": ["<COLUMN"],
+        "body": ["<COLUMN halign=\"${1|start,end,center|}\" valign=\"${2|start,end,center,between,around,evenly|}\">\n    ${0}\n</COLUMN>"],
+        "description": "A vertically expanding Column snippet with separately aligned children on each axis"
+    }
+}

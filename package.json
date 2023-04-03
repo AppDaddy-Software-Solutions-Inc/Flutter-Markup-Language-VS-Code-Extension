@@ -173,6 +173,14 @@
       },
       {
         "language": "fml",
+        "path": "./snippets/layout-widget-snippets/column.json"
+      },
+      {
+        "language": "fml",
+        "path": "./snippets/layout-widget-snippets/row.json"
+      },
+      {
+        "language": "fml",
         "path": "./snippets/utility-widget-snippets/variable.json"
       }
     ]
