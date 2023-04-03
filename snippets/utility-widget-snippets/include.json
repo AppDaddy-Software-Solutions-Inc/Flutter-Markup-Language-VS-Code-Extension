@@ -1,0 +1,7 @@
+{
+    "INCLUDE [FML]": {
+      "prefix": ["<INCLUDE"],
+      "body": ["<INCLUDE url=\"${1}.xml\" />"],
+      "description": "An Include snippet"
+    }
+}
