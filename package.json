@@ -165,6 +165,10 @@
       },
       {
         "language": "fml",
+        "path": "./snippets/interactive-widget-snippets/typeahead.json"
+      },
+      {
+        "language": "fml",
         "path": "./snippets/layout-widget-snippets/box.json"
       },
       {
