@@ -1,256 +1,324 @@
 {
-  "name": "FML",
+  "name": "fml",
   "displayName": "Flutter Markup Language",
-  "description": "Flutter Markup Language",
-  "version": "0.0.1",
+  "description": "Flutter Markup Language VSCode Extension",
+  "version": "0.0.2",
+  "publisher": "appdaddy-software-solutions-inc",
   "engines": {
-    "vscode": "^1.76.0"
+    "vscode": "^1.76.2"
   },
   "categories": [
+    "Other",
     "Programming Languages",
     "Snippets"
   ],
+  "main": "./out/extension.js",
   "contributes": {
-    "languages": [{
-      "id": "fml",
-      "aliases": ["Flutter Markup Language", "fml"],
-      "extensions": [".xml"],
-      "configuration": "./language-configuration.json"
-    }],
-    "grammars": [{
-      "language": "fml",
-      "scopeName": "source.fml",
-      "path": "./syntaxes/fml.tmLanguage.json"
-    }],
+    "commands": [
+      {
+        "command": "fml.helloWorld",
+        "title": "Hello World"
+      }
+    ],
+    "languages": [
+      {
+        "id": "xml",
+        "aliases": [
+          "Flutter Markup Language",
+          "XML",
+          "xml",
+          "FML",
+          "fml"
+        ],
+        "extensions": [
+          ".xml",
+          ".fml"
+        ]
+      }
+    ],
+    "properties": {
+      "languageServerExample.maxNumberOfProblems": {
+        "scope": "resource",
+        "type": "number",
+        "default": 100,
+        "description": "Controls the maximum number of problems produced by the server."
+      },
+      "languageServerExample.trace.server": {
+        "scope": "window",
+        "type": "string",
+        "enum": [
+          "off",
+          "messages",
+          "verbose"
+        ],
+        "default": "off",
+        "description": "Traces the communication between VS Code and the language server."
+      }
+    },
+    "grammars": [
+      {
+        "language": "xml",
+        "scopeName": "source.fml",
+        "path": "./syntaxes/fml.tmLanguage.json"
+      }
+    ],
     "snippets": [
       {
-        "language": "fml",
+        "language": "xml",
         "path": "./snippets/data-interface-widget-snippets/chart.json"
       },
       {
-        "language": "fml",
+        "language": "xml",
+        "path": "./snippets/data-interface-widget-snippets/chart.json"
+      },
+      {
+        "language": "xml",
         "path": "./snippets/data-interface-widget-snippets/list.json"
       },
       {
-        "language": "fml",
+        "language": "xml",
         "path": "./snippets/data-interface-widget-snippets/menu.json"
       },
       {
-        "language": "fml",
+        "language": "xml",
         "path": "./snippets/data-interface-widget-snippets/table.json"
       },
       {
-        "language": "fml",
+        "language": "xml",
         "path": "./snippets/datasource-snippets/camera.json"
       },
       {
-        "language": "fml",
+        "language": "xml",
         "path": "./snippets/datasource-snippets/data.json"
       },
       {
-        "language": "fml",
+        "language": "xml",
         "path": "./snippets/datasource-snippets/delete.json"
       },
       {
-        "language": "fml",
+        "language": "xml",
         "path": "./snippets/datasource-snippets/filepicker.json"
       },
       {
-        "language": "fml",
+        "language": "xml",
         "path": "./snippets/datasource-snippets/get.json"
       },
       {
-        "language": "fml",
+        "language": "xml",
         "path": "./snippets/datasource-snippets/gps.json"
       },
       {
-        "language": "fml",
+        "language": "xml",
         "path": "./snippets/datasource-snippets/log.json"
       },
       {
-        "language": "fml",
+        "language": "xml",
         "path": "./snippets/datasource-snippets/nfc.json"
       },
       {
-        "language": "fml",
+        "language": "xml",
         "path": "./snippets/datasource-snippets/patch.json"
       },
       {
-        "language": "fml",
+        "language": "xml",
         "path": "./snippets/datasource-snippets/post.json"
       },
       {
-        "language": "fml",
+        "language": "xml",
         "path": "./snippets/datasource-snippets/put.json"
       },
       {
-        "language": "fml",
+        "language": "xml",
         "path": "./snippets/datasource-snippets/socket.json"
       },
       {
-        "language": "fml",
+        "language": "xml",
         "path": "./snippets/datasource-snippets/sse.json"
       },
       {
-        "language": "fml",
+        "language": "xml",
         "path": "./snippets/display-widget-snippets/busy.json"
       },
       {
-        "language": "fml",
+        "language": "xml",
         "path": "./snippets/display-widget-snippets/html.json"
       },
       {
-        "language": "fml",
+        "language": "xml",
         "path": "./snippets/display-widget-snippets/icon.json"
       },
       {
-        "language": "fml",
+        "language": "xml",
         "path": "./snippets/display-widget-snippets/image.json"
       },
       {
-        "language": "fml",
+        "language": "xml",
         "path": "./snippets/display-widget-snippets/text.json"
       },
       {
-        "language": "fml",
+        "language": "xml",
         "path": "./snippets/interactive-widget-snippets/button.json"
       },
       {
-        "language": "fml",
+        "language": "xml",
         "path": "./snippets/interactive-widget-snippets/checkbox.json"
       },
       {
-        "language": "fml",
+        "language": "xml",
         "path": "./snippets/interactive-widget-snippets/datepicker.json"
       },
       {
-        "language": "fml",
+        "language": "xml",
         "path": "./snippets/interactive-widget-snippets/gesture.json"
       },
       {
-        "language": "fml",
+        "language": "xml",
         "path": "./snippets/interactive-widget-snippets/input.json"
       },
       {
-        "language": "fml",
+        "language": "xml",
         "path": "./snippets/interactive-widget-snippets/link.json"
       },
       {
-        "language": "fml",
+        "language": "xml",
         "path": "./snippets/interactive-widget-snippets/popover.json"
       },
       {
-        "language": "fml",
+        "language": "xml",
         "path": "./snippets/interactive-widget-snippets/radio.json"
       },
       {
-        "language": "fml",
+        "language": "xml",
         "path": "./snippets/interactive-widget-snippets/scribble.json"
       },
       {
-        "language": "fml",
+        "language": "xml",
         "path": "./snippets/interactive-widget-snippets/select.json"
       },
       {
-        "language": "fml",
+        "language": "xml",
         "path": "./snippets/interactive-widget-snippets/slider.json"
       },
       {
-        "language": "fml",
+        "language": "xml",
         "path": "./snippets/interactive-widget-snippets/switch.json"
       },
       {
-        "language": "fml",
+        "language": "xml",
         "path": "./snippets/interactive-widget-snippets/typeahead.json"
       },
       {
-        "language": "fml",
+        "language": "xml",
         "path": "./snippets/layout-widget-snippets/box.json"
       },
       {
-        "language": "fml",
+        "language": "xml",
         "path": "./snippets/layout-widget-snippets/center.json"
       },
       {
-        "language": "fml",
+        "language": "xml",
         "path": "./snippets/layout-widget-snippets/column.json"
       },
       {
-        "language": "fml",
+        "language": "xml",
         "path": "./snippets/layout-widget-snippets/drawer.json"
       },
       {
-        "language": "fml",
+        "language": "xml",
         "path": "./snippets/layout-widget-snippets/expanded.json"
       },
       {
-        "language": "fml",
+        "language": "xml",
         "path": "./snippets/layout-widget-snippets/footer.json"
       },
       {
-        "language": "fml",
+        "language": "xml",
         "path": "./snippets/layout-widget-snippets/header.json"
       },
       {
-        "language": "fml",
+        "language": "xml",
         "path": "./snippets/layout-widget-snippets/modal.json"
       },
       {
-        "language": "fml",
+        "language": "xml",
         "path": "./snippets/layout-widget-snippets/padding.json"
       },
       {
-        "language": "fml",
+        "language": "xml",
         "path": "./snippets/layout-widget-snippets/pager.json"
       },
       {
-        "language": "fml",
+        "language": "xml",
         "path": "./snippets/layout-widget-snippets/positioned.json"
       },
       {
-        "language": "fml",
+        "language": "xml",
         "path": "./snippets/layout-widget-snippets/row.json"
       },
       {
-        "language": "fml",
+        "language": "xml",
         "path": "./snippets/layout-widget-snippets/scroller.json"
       },
       {
-        "language": "fml",
+        "language": "xml",
         "path": "./snippets/layout-widget-snippets/splitview.json"
       },
       {
-        "language": "fml",
+        "language": "xml",
         "path": "./snippets/layout-widget-snippets/stack.json"
       },
       {
-        "language": "fml",
+        "language": "xml",
         "path": "./snippets/layout-widget-snippets/tabview.json"
       },
       {
-        "language": "fml",
+        "language": "xml",
         "path": "./snippets/layout-widget-snippets/treeview.json"
       },
       {
-        "language": "fml",
+        "language": "xml",
         "path": "./snippets/utility-widget-snippets/include.json"
       },
       {
-        "language": "fml",
+        "language": "xml",
         "path": "./snippets/utility-widget-snippets/template.json"
       },
       {
-        "language": "fml",
+        "language": "xml",
         "path": "./snippets/utility-widget-snippets/timer.json"
       },
       {
-        "language": "fml",
+        "language": "xml",
         "path": "./snippets/utility-widget-snippets/trigger.json"
       },
       {
-        "language": "fml",
+        "language": "xml",
         "path": "./snippets/utility-widget-snippets/variable.json"
       }
     ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src --ext ts",
+    "test": "node ./out/test/runTest.js"
+  },
+  "dependencies": {
+    "vscode-languageclient": "^8.1.0"
+  },
+  "devDependencies": {
+    "@types/glob": "^8.1.0",
+    "@types/mocha": "^10.0.1",
+    "@types/node": "16.x",
+    "@types/vscode": "^1.77.0",
+    "@typescript-eslint/eslint-plugin": "^5.56.0",
+    "@typescript-eslint/parser": "^5.56.0",
+    "@vscode/test-electron": "^2.3.0",
+    "eslint": "^8.36.0",
+    "glob": "^8.1.0",
+    "mocha": "^10.2.0",
+    "typescript": "^4.9.5"
   }
 }

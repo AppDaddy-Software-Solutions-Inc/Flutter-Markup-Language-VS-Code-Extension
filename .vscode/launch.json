@@ -6,25 +6,29 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Extension",
+            "name": "FML Extension - Language Server",
             "type": "extensionHost",
             "request": "launch",
             "args": [
                 "--extensionDevelopmentPath=${workspaceFolder}"
-            ]
+            ],
+			"outFiles": [
+				"${workspaceFolder}/out/**/*.js"
+			],
+			"preLaunchTask": "${defaultBuildTask}"
         },
         {
-            "name": "Language Server E2E Test",
+            "name": "FML Extension - E2E Tests",
             "type": "extensionHost",
             "request": "launch",
-            "runtimeExecutable": "${execPath}",
             "args": [
-              "${workspaceRoot}/examples",
-              "--extensionDevelopmentPath=${workspaceRoot}",
-              "--extensionTestsPath=${workspaceRoot}/client/out/test/index",
-              "${workspaceRoot}/client/testFixture"
+				"--extensionDevelopmentPath=${workspaceFolder}",
+				"--extensionTestsPath=${workspaceFolder}/out/test/suite/index"
             ],
-            "outFiles": ["${workspaceRoot}/client/out/test/**/*.js"]
+            "outFiles": [
+                "${workspaceRoot}/client/out/test/**/*.js"
+            ],
+			"preLaunchTask": "${defaultBuildTask}"
           }
     ]
 }
