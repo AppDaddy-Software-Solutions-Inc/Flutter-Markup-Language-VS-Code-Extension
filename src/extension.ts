@@ -1,6 +1,8 @@
 // The module 'vscode' contains the VS Code extensibility API
 // Import the module and reference it with the alias vscode in your code below
 import * as vscode from 'vscode';
+import { initHover } from './hover/hover';
+import { initCommands } from './commands/commands';
 
 // This method is called when your extension is activated
 // Your extension is activated the very first time the command is executed
@@ -10,33 +12,9 @@ export function activate(context: vscode.ExtensionContext) {
 	// This line of code will only be executed once when your extension is activated
 	console.log('Congratulations, your extension "fml" is now active!');
 
-	// The command has been defined in the package.json file
-	// Now provide the implementation of the command with registerCommand
-	// The commandId parameter must match the command field in package.json
-	let disposable = vscode.commands.registerCommand('fml.helloWorld', () => {
-		// The code you place here will be executed every time your command is executed
-		// Display a message box to the user
-		vscode.window.showInformationMessage('Hello World from Flutter Markup Language!');
-	});
+	initCommands(context);
 
-	context.subscriptions.push(disposable);
-
-	vscode.languages.registerHoverProvider('xml', {
-		provideHover(document, position, token) {
-
-			const range = document.getWordRangeAtPosition(position);
-			
-			const word = document.getText(range);
-			if (range === undefined || word === undefined || range === null || word === null || word === '' || !(typeof word === 'string')) {
-				return; 
-			}
-			else {
-				return {
-					contents: [`${document.languageId} (fml) Hovering: ${word}`]
-				};
-			}
-		}
-	});
+	initHover();
 }
 
 // This method is called when your extension is deactivated
