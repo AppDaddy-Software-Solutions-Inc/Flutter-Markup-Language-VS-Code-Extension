@@ -3,8 +3,9 @@
   "displayName": "Flutter Markup Language",
   "description": "Flutter Markup Language VSCode Extension",
   "version": "0.0.2",
+  "publisher": "appdaddy-software-solutions-inc",
   "engines": {
-    "vscode": "^1.77.0"
+    "vscode": "^1.76.2"
   },
   "categories": [
     "Other",
@@ -23,17 +24,16 @@
       {
         "id": "xml",
         "aliases": [
+          "Flutter Markup Language",
           "XML",
           "xml",
           "FML",
-          "fml",
-          "Flutter Markup Language"
+          "fml"
         ],
         "extensions": [
           ".xml",
           ".fml"
-        ],
-        "configuration": "./language-configuration.json"
+        ]
       }
     ],
     "properties": {
@@ -63,6 +63,10 @@
       }
     ],
     "snippets": [
+      {
+        "language": "xml",
+        "path": "./snippets/data-interface-widget-snippets/chart.json"
+      },
       {
         "language": "xml",
         "path": "./snippets/data-interface-widget-snippets/chart.json"

@@ -20,6 +20,23 @@ export function activate(context: vscode.ExtensionContext) {
 	});
 
 	context.subscriptions.push(disposable);
+
+	vscode.languages.registerHoverProvider('xml', {
+		provideHover(document, position, token) {
+
+			const range = document.getWordRangeAtPosition(position);
+			
+			const word = document.getText(range);
+			if (range === undefined || word === undefined || range === null || word === null || word === '' || !(typeof word === 'string')) {
+				return; 
+			}
+			else {
+				return {
+					contents: [`${document.languageId} (fml) Hovering: ${word}`]
+				};
+			}
+		}
+	});
 }
 
 // This method is called when your extension is deactivated
