@@ -10,7 +10,7 @@ GitHub Repositorys: [VS Code Extension](https://github.com/AppDaddy-Software-Sol
 
 # Flutter Markup Language VS Code Extension
 
-Support for [FML (Flutter Markup Language)](https://github.com/AppDaddy-Software-Solutions-Inc/Flutter-Markup-Language) template building to aid with syntactical errors, increase efficiency and reduce application development time.
+Support for [FML (Flutter Markup Language)](https://github.com/AppDaddy-Software-Solutions-Inc/Flutter-Markup-Language) template building. Extension helps with syntactical errors, increasing code efficiency and reducing application development time. To learn what FML is visit the [FML Website](https://fml.dev).
 
 ## Features
 
