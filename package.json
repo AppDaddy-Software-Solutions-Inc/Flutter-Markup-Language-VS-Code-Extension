@@ -1,9 +1,18 @@
 {
   "name": "fml",
-  "displayName": "Flutter Markup Language",
-  "description": "Flutter Markup Language VSCode Extension",
+  "displayName": "Flutter Markup Language Ext.",
+  "description": "Snippets and Highlighting for FML",
   "version": "0.0.2",
   "publisher": "appdaddy-software-solutions-inc",
+  "icon": "icon.png",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AppDaddy-Software-Solutions-Inc/Flutter-Markup-Language-VS-Code-Extension"
+  },
+  "bugs": {
+    "url": "https://github.com/AppDaddy-Software-Solutions-Inc/Flutter-Markup-Language-VS-Code-Extension/issues"
+  },
+  "license": "MIT",
   "engines": {
     "vscode": "^1.76.2"
   },
