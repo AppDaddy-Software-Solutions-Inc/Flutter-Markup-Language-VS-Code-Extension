@@ -4,7 +4,7 @@
 
 <p align="center">
     <i>
-        GitHub Repository: <https://github.com/AppDaddy-Software-Solutions-Inc/Flutter-Markup-Language-VS-Code-Extension>
+        GitHub Repositorys: <a href="https://github.com/AppDaddy-Software-Solutions-Inc/Flutter-Markup-Language-VS-Code-Extension">Extension</a> | <a href="https://github.com/AppDaddy-Software-Solutions-Inc/Flutter-Markup-Language">Library</a>
     </i>
 </p>
 
