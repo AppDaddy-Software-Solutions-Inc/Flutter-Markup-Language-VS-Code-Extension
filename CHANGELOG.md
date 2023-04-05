@@ -5,12 +5,12 @@ All notable changes to the "FML" extension will be documented in this file... if
 
 ## v0.0.4 (2023/4/5)
 
-- v0.0.4 Description
+- Improved marketplace .md files and added images
 
 ### New
-- 
+- Added a changelog
 ### Fixes
-- 
+- fixed the readme links
 
 
 ## v0.0.3 (2023/4/5)
