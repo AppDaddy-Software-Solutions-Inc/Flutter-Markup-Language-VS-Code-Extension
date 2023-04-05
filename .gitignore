@@ -1,3 +1,3 @@
 node_modules
 *.vsix
-.vscode-test/vscode-win32-x64-archive-1.77.0.tmp/resources/app/telemetry-core.json
+.vscode-test/
