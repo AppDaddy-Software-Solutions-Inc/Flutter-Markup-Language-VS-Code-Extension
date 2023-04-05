@@ -14,12 +14,15 @@
 
 # Flutter Markup Language VSCode Extension
 
-Support for [FML (Flutter Markup Language)](https://github.com/AppDaddy-Software-Solutions-Inc/Flutter-Markup-Language) templating building to aid with syntactical errors, increase efficiency and reduce application development time.
+Support for [FML (Flutter Markup Language)](https://github.com/AppDaddy-Software-Solutions-Inc/Flutter-Markup-Language) template building to aid with syntactical errors, increase efficiency and reduce application development time.
 
 ## Features
 
 - FML Syntax Highlighting
 - 100+ Snippets for ~70 FML Widgets
+  - Tab stops (press `Tab`/`Enter` to cycle through)
+  - Attribute placeholders
+  - Attribute choice dropdowns
   
 ## Contributing
 
