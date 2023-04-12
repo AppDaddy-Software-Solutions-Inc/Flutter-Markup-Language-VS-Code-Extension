@@ -2,7 +2,7 @@
   "name": "flutter-markup-language",
   "displayName": "Flutter Markup Language Ext.",
   "description": "Snippets and Highlighting for FML",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "publisher": "appdaddy-software-solutions-inc",
   "icon": "icon.png",
   "repository": {
@@ -143,6 +143,10 @@
       {
         "language": "xml",
         "path": "./snippets/datasource-snippets/sse.json"
+      },
+      {
+        "language": "xml",
+        "path": "./snippets/datasource-snippets/stash.json"
       },
       {
         "language": "xml",

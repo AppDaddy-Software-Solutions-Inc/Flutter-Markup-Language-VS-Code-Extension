@@ -9,7 +9,7 @@
     "SELECT (dynamic) [FML]": {
         "prefix": ["<SELECT"],
         "body": [
-            "<SELECT id=\"${1}\" data=\"${2}\" addempty=\"${3|true,false|\">\r\n    <OPTION value=\"data.${4}\" label=\"data.${5}\"/>\r\n</SELECT>"
+            "<SELECT id=\"${1}\" data=\"${2}\" addempty=\"${3|true,false|}\">\r\n    <OPTION value=\"data.${4}\" label=\"data.${5}\"/>\r\n</SELECT>"
         ],
         "description": "A Select snippet with its options populated by a datasource"
     }

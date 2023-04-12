@@ -44,7 +44,7 @@
     "INPUT (custom types) [FML]": {
         "prefix": ["<INPUT"],
         "body": [
-            "<INPUT id=\"${1}\" type=\"${2|null,email,phone,currency,cvc,credit,bool,numeric,int,expire|}\" keyboardtype=\"${3|text,url,name,number,numeric,datetime,emailaddress,phone,streetaddress,multiline|}\" keyboardinput=\"${|next,done,go,search,send|}\" />"
+            "<INPUT id=\"${1}\" hint=\"${0}\" type=\"${2|null,email,phone,currency,cvc,credit,bool,numeric,int,expire|}\" keyboardtype=\"${3|text,url,name,number,numeric,datetime,emailaddress,phone,streetaddress,multiline|}\" keyboardinput=\"${4|next,done,go,search,send|}\" />"
         ],
         "description": "A customizable Input snippet with various types"
     }
