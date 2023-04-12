@@ -1,7 +1,7 @@
 {
     "TEMPLATE (<FML />) [FML]": {
       "prefix": ["<TEMPLATE", "<FML"],
-      "body": ["<FML title=\"${1}\" version=\"1.0\" rights=\"\" linkable=\"\" onstart=\"\" onreturn=\"\">\r\n    ${0}\r\n</FML>"],
+      "body": ["<FML title=\"${1}\" version=\"1.0\" rights=\"\" linkable=\"\" onstart=\"\" onreturn=\"\">\r\n    \r\n    <!-- Variables -->\r\n\r\n    <!-- DataSources -->\r\n\r\n    <!-- Interface -->\r\n    ${0}\r\n<\/FML>"],
       "description": "A FML Template wrapper snippet"
     }
 }

@@ -2,7 +2,7 @@
   "TABLE [FML]": {
     "prefix": ["<TABLE"],
     "body": [
-      "<TABLE id=\"${1}\" data=\"${2}\">\n    <TH> <!-- Table Header -->\n        <TD sort=\"date,datetime\">\n            <TEXT label=\"Date\" />\n        </TD>\n        <TD sort=\"lastname,string\">\n            <TEXT label=\"Name\" />\n        </TD>\n        <TD sort=\"age,numeric\">\n            <TEXT label=\"Date\" />\n        </TD>\n        <TD>\n            <TEXT label=\"Picture\" />\n        </TD>\n    </TH>\n    <TR> <!-- Table Rows -->\n        <TD>\n            <TEXT label=\"{data.date}\" />\n        </TD>\n        <TD>\n            <TEXT label=\"{data.firstname} {data.lastname}\" />\n        </TD>\n        <TD>\n            <TEXT label=\"{data.age}\" />\n        </TD>\n        <TD>\n            <IMAGE url=\"{data.imageurl}\" />\n        </TD>\n    </TR>\n</TABLE>"
+      "<TABLE id=\"${1}\" data=\"${2}\">\n    <!-- Table Header -->\n    <TH>\n        <TD sort=\"date,datetime\">\n            <TEXT label=\"Date\" />\n        </TD>\n        <TD sort=\"lastname,string\">\n            <TEXT label=\"Name\" />\n        </TD>\n        <TD sort=\"age,numeric\">\n            <TEXT label=\"Date\" />\n        </TD>\n        <TD>\n            <TEXT label=\"Picture\" />\n        </TD>\n    </TH>\n    <!-- Table Rows -->\n    <TR>\n        <TD>\n            <TEXT label=\"{data.date}\" />\n        </TD>\n        <TD>\n            <TEXT label=\"{data.firstname} {data.lastname}\" />\n        </TD>\n        <TD>\n            <TEXT label=\"{data.age}\" />\n        </TD>\n        <TD>\n            <IMAGE url=\"{data.imageurl}\" />\n        </TD>\n    </TR>\n</TABLE>"
     ],
     "description": "A Table snippet with 4 columns"
   }

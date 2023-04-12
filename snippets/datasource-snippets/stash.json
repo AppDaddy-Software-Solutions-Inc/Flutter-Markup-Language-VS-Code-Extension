@@ -1,0 +1,10 @@
+{
+    "STASH (w/ Table view) [FML]": {
+        "prefix": ["<STASH"],
+        "body": [
+            "<STASH id=\"STASHSOURCE\" autoexecute=\"true\" />\r\n<BOX width=\"100%\" height=\"100%\">\r\n\t<TABLE id=\"stashtable\" data=\"STASHSOURCE\">\r\n\t\t<TH>\r\n\t\t\t<TD sort=\"key\">\r\n\t\t\t\t<TEXT label=\"Key\" />\r\n\t\t\t</TD>\r\n\t\t\t<TD sort=\"value\">\r\n\t\t\t\t<TEXT label=\"Value\" />\r\n\t\t\t</TD>\r\n\t\t</TH>\r\n\t\t<TR>\r\n\t\t\t<TD>\r\n\t\t\t\t<TEXT label=\"{data.key}\"/>\r\n\t\t\t</TD>\r\n\t\t\t<TD>\r\n\t\t\t\t<TEXT label=\"{data.value}\"/>\r\n\t\t\t</TD>\r\n\t\t</TR>\r\n\t</TABLE>\r\n</BOX>"
+        ],
+        "description": "A STASH Datasource snippet with a Table view"
+    }
+}
+  
