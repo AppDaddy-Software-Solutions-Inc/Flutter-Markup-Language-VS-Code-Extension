@@ -2,6 +2,16 @@
 
 All notable changes to the "FML" extension will be documented in this file... if we remember to update it...
 
+## v0.0.6 (2023/5/24)
+
+- Added FML Template Preview with hot reload!
+  - Compatible with FML 2.0.0+
+  - Added button to toolbar to open preview
+  - Loads remote (pad.fml.dev) engine to parse templates
+  - Reloads Template on save or with toolbar button
+  - Added custom FML icon to toolbar
+- Fixed README rating shield and typos
+  
 ## v0.0.5 (2023/4/12)
 
 - Snippet Improvements and Bug fixes and added STASH datasource!
