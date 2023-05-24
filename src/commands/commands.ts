@@ -92,6 +92,7 @@ function updateTemplatePreview () {
 
 // webview + iframe to run the FML Engine through for template parsing 
 // and a listener within the webview to pass the message to the iframe
+let engineUrl: string = `https://pad.fml.dev/#/templates/vscode.xml`;
 let iframeHtml: string =`<!DOCTYPE html>
 	<html>
 	<head>
@@ -113,7 +114,7 @@ let iframeHtml: string =`<!DOCTYPE html>
 		</style>
 	</head>
 	<body>	
-		<iframe id="iframe" name="${Date.now()}" src="https://pad.fml.dev/#/templates/vscode.xml?v=${Date.now()}" title="fmliframe" sandbox="allow-same-origin allow-scripts allow-top-navigation allow-popups allow-pointer-lock allow-forms"></iframe>
+		<iframe id="iframe" name="${Date.now()}" src="${engineUrl}?v=${Date.now()}" title="fmliframe" sandbox="allow-same-origin allow-scripts allow-top-navigation allow-popups allow-pointer-lock allow-forms"></iframe>
 		<!-- Relay the message the preview window receives to the iframe -->
 		<script>
 			window.addEventListener('message', (event) => {
