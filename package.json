@@ -2,9 +2,9 @@
   "name": "flutter-markup-language",
   "displayName": "Flutter Markup Language Ext.",
   "description": "Snippets and Highlighting for FML",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "publisher": "appdaddy-software-solutions-inc",
-  "icon": "icon.png",
+  "icon": "./icon.png",
   "repository": {
     "type": "git",
     "url": "https://github.com/AppDaddy-Software-Solutions-Inc/Flutter-Markup-Language-VS-Code-Extension"
@@ -25,10 +25,45 @@
   "contributes": {
     "commands": [
       {
-        "command": "fml.helloWorld",
-        "title": "Hello World"
+        "command": "fml.openTemplatePreview",
+        "title": "Open Template Preview",
+        "category": "FML",
+        "when": "resourceExtname == .xml && editorIsOpen && flutter-markup-language.isPreviewOpen != true",
+        "icon": {
+          "light": "./fml-icon-outline-black.svg",
+          "dark": "./fml-icon-outline-white.svg"
+        }
+      },
+      {
+        "command": "fml.updateTemplatePreview",
+        "title": "Update Template Preview",
+        "category": "FML",
+        "when": "resourceExtname == .xml && editorIsOpen && flutter-markup-language.isPreviewOpen == true",
+        "icon": {
+          "light": "./fml-icon-black.svg",
+          "dark": "./fml-icon-white.svg"
+        }
       }
     ],
+    "menus": {
+      "editor/title": [
+        {
+          "command": "fml.openTemplatePreview",
+          "when": "editorLangId == 'xml' && editorIsOpen && flutter-markup-language.isPreviewOpen != true",
+          "group": "navigation@100"
+        },
+        {
+          "command": "fml.updateTemplatePreview",
+          "when": "editorLangId == 'xml' && editorIsOpen && flutter-markup-language.isPreviewOpen == true",
+          "group": "navigation@100"
+        }
+      ],
+      "commandPallet": [
+        {
+          "command": "fml.openTemplatePreview"
+        }
+      ]
+    },
     "languages": [
       {
         "id": "xml",
