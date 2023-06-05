@@ -105,11 +105,11 @@
 		"binding": {
 			"patterns": [
 			 {
-			"match": "\\{[\\w\\-\\._#]+\\}",
+			"match": "\\{[\\w\\-\\._#:]+\\}",
 			"name": "token.debug-token.fml"
 		     },
 			 {
-			"match": "\\'{[\\w\\-\\._#]+\\}'",
+			"match": "\\'{[\\w\\-\\._#:]+\\}'",
 			"name": "invalid.fml"
 		     }
 		]
