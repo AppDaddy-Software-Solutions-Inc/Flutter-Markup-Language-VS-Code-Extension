@@ -273,10 +273,6 @@
       },
       {
         "language": "xml",
-        "path": "./snippets/layout-widget-snippets/expanded.json"
-      },
-      {
-        "language": "xml",
         "path": "./snippets/layout-widget-snippets/footer.json"
       },
       {

@@ -1,7 +1,0 @@
-{
-    "EXPANDED [FML]": {
-      "prefix": ["<EXPANDED"],
-      "body": ["<EXPANDED flex=\"1\">\n    ${1}\n<EXPANDED>"],
-      "description": "A Expanded snippet for layouts within BOX/ROW/COLUMN"
-    }
-}
