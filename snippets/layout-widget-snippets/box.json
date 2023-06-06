@@ -2,36 +2,78 @@
   "BOX (custom layout wrapper) [FML]": {
     "prefix": ["<BOX"],
     "body": [
-      "<BOX layout=\"${1|column,row,stack|}\" expand=\"${2|true,false|}\" valign=\"${3|center,start,end,around,between|}\" halign=\"${4|center,start,end,around,between|}\">\n\t${0}\n</BOX>"
+      "<BOX layout=\"${1|col,row,stack|}\" valign=\"${2|center,start,end,around,between|}\" halign=\"${3|center,start,end,around,between|}\" pad=\"${4}\" margin=\"${5}\">\n\t${0}\n</BOX>"
     ],
     "description": "A Box snippet with customizable layout attributes"
   },
-  "BOX (default) [FML]": {
+  "BOX (basic) [FML]": {
     "prefix": ["<BOX"],
     "body": [
-      "<BOX layout=\"column\" expand=\"true\" center=\"false\" width=\"100%\" height=\"100%\" color=\"\" radius=\"0\">\n\t${0}\n</BOX>"
+      "<BOX layout=\"${1|col,row,stack|}\" flex=\"1\" center=\"true\" color=\"\">\n\t${0}\n</BOX>"
     ],
-    "description": "A Box snippet with default attributes applied"
+    "description": "A Box snippet with basic attributes applied"
+  },
+  "BOX (decorated) [FML]": {
+    "prefix": ["<BOX"],
+    "body": [
+      "<BOX color=\"random,random\" radius=\"8\" border=\"all\" bordercolor=\"random\" borderwidth=\"2\" elevation=\"4\" shadowcolor=\"random\" shadowx=\"0\" shadowy=\"0\">\n\t${0}\n</BOX>"
+    ],
+    "description": "A Box snippet with decoration attributes"
   },
   "BOX (centered-column) [FML]": {
     "prefix": ["<BOX"],
     "body": [
-      "<BOX layout=\"column\" expand=\"true\" center=\"true\" width=\"100%\" height=\"100%\" color=\"\" radius=\"0\">\n\t${0}\n</BOX>"
+      "<BOX layout=\"col\" center=\"true\" width=\"100%\" color=\"\" radius=\"0\">\n\t${0}\n</BOX>"
     ],
     "description": "A Box snippet with a centered column layout"
   },
   "BOX (centered-row) [FML]": {
     "prefix": ["<BOX"],
     "body": [
-      "<BOX layout=\"row\" expand=\"true\" center=\"true\" width=\"100%\" height=\"100%\" color=\"\" radius=\"0\">\n\t${0}\n</BOX>"
+      "<BOX layout=\"row\" center=\"true\" height=\"100%\" color=\"\" radius=\"0\">\n\t${0}\n</BOX>"
     ],
     "description": "A Box snippet with a centered row layout"
   },
   "BOX (stack) [FML]": {
     "prefix": ["<BOX"],
     "body": [
-      "<BOX layout=\"stack\" expand=\"true\">\n    <POS right=\"0\" bottom=\"0\">\n        ${0}\n    </POS>\n    <CENTER>\n        \n    </CENTER>\n</BOX>"
+      "<BOX layout=\"stack\" width=\"100%\" height=\"100%\">\n    <POS right=\"0\" bottom=\"0\">\n        ${0}\n    </POS>\n    <CENTER>\n        \n    </CENTER>\n</BOX>"
     ],
     "description": "A Box snippet with a stack layout"
+  },
+  "SBOX (basic) [FML]": {
+    "prefix": ["<SBOX"],
+    "body": [
+      "<SBOX layout=\"${1|col,row,stack|}\" pad=\"${2}\" margin=\"${3}\" color=\"\">\n\t${0}\n</SBOX>"
+    ],
+    "description": "A Shrink Box snippet with basic attributes applied"
+  },
+  "SBOX (decorated) [FML]": {
+    "prefix": ["<SBOX"],
+    "body": [
+      "<SBOX color=\"random,random\" radius=\"8\" border=\"all\" bordercolor=\"random\" borderwidth=\"2\" elevation=\"4\" shadowcolor=\"random\" shadowx=\"0\" shadowy=\"0\">\n\t${0}\n</SBOX>"
+    ],
+    "description": "A Shrink Box snippet with decoration attributes"
+  },
+  "SBOX (column) [FML]": {
+    "prefix": ["<SBOX"],
+    "body": [
+      "<SBOX layout=\"col\" color=\"\" radius=\"0\" pad=\"0\" margin=\"0\">\n\t${0}\n</SBOX>"
+    ],
+    "description": "A Shrink Box snippet with a column layout"
+  },
+  "SBOX (row) [FML]": {
+    "prefix": ["<SBOX"],
+    "body": [
+      "<SBOX layout=\"row\" color=\"\" radius=\"0\" pad=\"0\" margin=\"0\">\n\t${0}\n</SBOX>"
+    ],
+    "description": "A Shrink Box snippet with a row layout"
+  },
+  "SBOX (stack) [FML]": {
+    "prefix": ["<SBOX"],
+    "body": [
+      "<SBOX layout=\"stack\">\n    <POS right=\"0\" bottom=\"0\">\n        ${0}\n    </POS>\n    <CENTER>\n        \n    </CENTER>\n</SBOX>"
+    ],
+    "description": "A Shrink Box snippet with a stack layout"
   }
 }

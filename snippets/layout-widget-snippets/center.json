@@ -2,6 +2,6 @@
     "CENTER [FML]": {
       "prefix": ["<CENTER"],
       "body": ["<CENTER>\n    ${1}\n<CENTER>"],
-      "description": "A Center snippet"
+      "description": "A Center snippet for centering widgets inside STACK"
     }
 }
