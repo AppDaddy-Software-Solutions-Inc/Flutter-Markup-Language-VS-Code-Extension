@@ -1,10 +1,10 @@
 {
-    "MODAL [FML]": {
-      "prefix": ["<MODAL"],
-      "body": [
-        "<BUTTON onclick=\"modal1.open();\" label=\"Open Modal\" />\r\n<!-- Ensure Modals are a direct child of the template and not nested within widgets -->\r\n<MODAL id=\"modal1\" width=\"300\" height=\"300\">\r\n\t<BOX pad=\"10\" valign=\"between\">\r\n\t\t<BOX layout=\"row\" height=\"50\" valign=\"center\">\r\n\t\t\t<ICON icon=\"warning\" size=\"50\" color=\"orange\" />\r\n\t\t\t<PAD left=\"25\" />\r\n\t\t\t<TEXT size=\"36\" value=\"Warning\" color=\"orange\" />\r\n\t\t</BOX>\r\n\t\t<BOX layout=\"row\" halign=\"around\">\r\n\t\t\t<BTN onclick=\"modal1.close();\" label=\"cancel\" />\r\n\t\t\t<BTN onclick=\"modal1.close();\" label=\"continue\" />\r\n\t\t</BOX>\r\n\t</BOX>\r\n</MODAL>"
-      ],
-      "description": "A warning Modal example snippet and a supplied button to open"
-    }
+  "MODAL [FML]": {
+    "prefix": ["<MODAL"],
+    "body": [
+      "<BUTTON onclick=\"modal1.open();\" label=\"Open Modal\" />\r\n<!-- Ensure Modals are a direct child of the template and not nested within widgets -->\r\n<MODAL id=\"modal1\" width=\"300\" height=\"300\">\r\n\t<BOX pad=\"10\" valign=\"between\">\r\n\t\t<BOX layout=\"row\" height=\"50\" valign=\"center\">\r\n\t\t\t<ICON icon=\"warning\" size=\"50\" color=\"orange\" />\r\n\t\t\t<PAD left=\"25\" />\r\n\t\t\t<TEXT size=\"36\" value=\"Warning\" color=\"orange\" />\r\n\t\t</BOX>\r\n\t\t<BOX layout=\"row\" halign=\"around\">\r\n\t\t\t<BTN onclick=\"modal1.close();\" label=\"cancel\" />\r\n\t\t\t<BTN onclick=\"modal1.close();\" label=\"continue\" />\r\n\t\t</BOX>\r\n\t</BOX>\r\n</MODAL>"
+    ],
+    "description": "A warning Modal example snippet and a supplied button to open"
   }
+}
   
