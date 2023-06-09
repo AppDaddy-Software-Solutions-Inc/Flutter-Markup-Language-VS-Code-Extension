@@ -2,14 +2,14 @@
     "SPLITVIEW (horizontal) [FML]": {
       "prefix": ["<SPLITVIEW"],
       "body": [
-        "<SPLITVIEW width=\"${1:50%}\" direction=\"horizontal\">\n    <!-- View 1 -->\n    <VIEW>\n        ${2}\n    </VIEW>\n    <!-- View 2 -->\n    <VIEW>\n        ${3}\n    </VIEW>\n</SPLITVIEW>"
+        "<SPLITVIEW width=\"${1:50%}\" direction=\"horizontal\">\n    <!-- View 1 -->\n    <VIEW layout=\"col\">\n        ${2}\n    </VIEW>\n    <!-- View 2 -->\n    <VIEW layout=\"col\">\n        ${3}\n    </VIEW>\n</SPLITVIEW>"
       ],
       "description": "A horizontal Splitview snippet"
     },
     "SPLITVIEW (vertical) [FML]": {
       "prefix": ["<SPLITVIEW"],
       "body": [
-        "<SPLITVIEW height=\"${1:300}\" direction=\"vertical\">\n    <!-- View 1 -->\n    <VIEW>\n        ${2}\n    </VIEW>\n    <!-- View 2 -->\n    <VIEW>\n        ${3}\n    </VIEW>\n</SPLITVIEW>"
+        "<SPLITVIEW height=\"${1:300}\" direction=\"vertical\">\n    <!-- View 1 -->\n    <VIEW layout=\"row\">\n        ${2}\n    </VIEW>\n    <!-- View 2 -->\n    <VIEW layout=\"row\">\n        ${3}\n    </VIEW>\n</SPLITVIEW>"
       ],
       "description": "A vertical Splitview snippet"
     },
