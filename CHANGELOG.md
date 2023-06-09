@@ -3,10 +3,18 @@
 All notable changes to the "FML" extension will be documented in this file... if we remember to update it...
 
 ## Language Compatibility
-### FML v2.0.0+
+### *FML v2.0.0+*
 
 ## Extension Versions
-### v0.0.7 (2023/06/09)
+
+### **v0.0.8** (2023/06/09)
+
+#### Fixes
+- Fixed annoying message when saving without a preview window
+- Updated Changelog
+
+
+### **v0.0.7** (2023/06/09)
 
 #### Fixes
 - Prevented VSC update sync issue
@@ -14,7 +22,7 @@ All notable changes to the "FML" extension will be documented in this file... if
 - Solved highlighting issue with index references
 
 
-### v0.0.6 (2023/05/24)
+### **v0.0.6** (2023/05/24)
 
 *note version has updating issue with VSC*
 
@@ -30,7 +38,7 @@ All notable changes to the "FML" extension will be documented in this file... if
 - Fixed README rating shield and typos
   
 
-### v0.0.5 (2023/04/12)
+### **v0.0.5** (2023/04/12)
 
 - Snippet Improvements and Bug fixes and added STASH datasource!
 
@@ -46,7 +54,7 @@ All notable changes to the "FML" extension will be documented in this file... if
 - Improved LOG id, date formatting & removed table datarow id
 
 
-### v0.0.4 (2023/04/05)
+### **v0.0.4** (2023/04/05)
 
 - Improved marketplace .md files and added images
 
@@ -57,16 +65,16 @@ All notable changes to the "FML" extension will be documented in this file... if
 - fixed the readme links
 
 
-### v0.0.3 (2023/04/05)
+### **v0.0.3** (2023/04/05)
 
 - Documentation Updates
   
 
-### v0.0.2 (2023/04/05)
+### **v0.0.2** (2023/04/05)
 
 - Initial beta release
   
 
-### v0.0.1 (2023/04/05)
+### **v0.0.1** (2023/04/05)
 
 - Initial test publish release
