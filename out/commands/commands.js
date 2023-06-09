@@ -63,11 +63,12 @@ const openTemplatePreview = function (context) {
 function updateTemplatePreview() {
     // Get current editor panel text (fml code)
     let editorText = vscode.window.activeTextEditor?.document.getText();
+    // Preview panel is not opened
     if (previewPanel === undefined) {
-        vscode.window.showErrorMessage('Unable to find an open preview panel to update.');
+        // vscode.window.showErrorMessage('Unable to find an open preview panel to update.');
     }
     else if (editorText === undefined) {
-        vscode.window.showErrorMessage('Unable to read open editor panel text.');
+        vscode.window.showErrorMessage('Unable to read open template.');
     }
     else {
         previewPanel.webview.postMessage(editorText);
